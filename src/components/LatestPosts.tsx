@@ -15,10 +15,10 @@ export default function LatestPosts() {
           <div>
             <span className="badge-pill bg-opacity-10 bg-primary text-primary">Insights</span>
             <h2 className="display-6 fw-bold text-white mt-3" style={{ fontFamily: 'var(--font-display)' }}>
-              Latest signals from the lab
+              Latest signals from the studio
             </h2>
             <p className="text-muted mb-0">
-              Essays, experiments, and playbooks on scaling next-gen digital ecosystems.
+              Essays, experiments, and playbooks on building expressive, durable web experiences.
             </p>
           </div>
           <Link href="/blog" className="text-decoration-none text-primary fw-semibold">

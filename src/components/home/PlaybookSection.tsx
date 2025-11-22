@@ -9,10 +9,10 @@ export default function PlaybookSection() {
         <div className="text-center mb-5">
           <span className="badge-pill bg-opacity-10 bg-primary text-primary">Playbook</span>
           <h2 className="display-6 fw-bold text-white mt-3" style={{ fontFamily: 'var(--font-display)' }}>
-            Velocity without sacrificing craft
+            Co-creating with momentum
           </h2>
           <p className="text-muted mt-3">
-            We integrate with your team as product co-founders, aligning strategy, execution, and instrumentation.
+            We integrate with your team as product co-founders, aligning vision, delivery, and instrumentation from day one.
           </p>
         </div>
         <div className="d-grid gap-4 gap-lg-5">

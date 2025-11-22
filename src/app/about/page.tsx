@@ -1,19 +1,21 @@
+import { siteConfig } from '@/lib/siteConfig';
+
 export default function AboutPage() {
   const pillars = [
     {
-      title: 'Full-stack squads',
+      title: 'Small, senior crews',
       description:
-        'Every engagement is led by product strategists, design leaders, and senior engineers working as one autonomous unit.',
+        'Every engagement is run by strategists, designers, and engineers who can switch contexts from brand to build without losing the plot.',
     },
     {
-      title: 'Systems over stunts',
+      title: 'Systems with taste',
       description:
-        'We build enduring platforms with clear governance models, automated testing, and knowledge transfer baked in.',
+        'We balance expressive art direction with reusable foundations—tokens, libraries, and publishing flows you can keep using.',
     },
     {
       title: 'Transparent momentum',
       description:
-        'Dashboards, weekly demos, and shared roadmaps keep teams aligned from discovery through scale-up.',
+        'Weekly demos, shared roadmaps, and instrumentation keep decisions visible from kickoff through the first iterations after launch.',
     },
   ];
 
@@ -21,22 +23,21 @@ export default function AboutPage() {
     <main className="py-5">
       <div className="hypernova-container">
         <header className="text-center mb-5">
-          <span className="badge-pill bg-opacity-10 bg-primary text-primary">About Hypernova Studio</span>
+          <span className="badge-pill bg-opacity-10 bg-primary text-primary">About {siteConfig.name}</span>
           <h1 className="display-5 fw-bold text-white mt-3" style={{ fontFamily: 'var(--font-display)' }}>
-            We are the product strike team for ambitious brands
+            A studio for teams who want their site to feel intentional
           </h1>
           <p className="text-muted lead mt-3" style={{ maxWidth: '780px', marginInline: 'auto' }}>
-            Hypernova Studio assembles multidisciplinary squads that architect and launch legendary digital experiences.
-            From composable marketing ecosystems to enterprise-grade React platforms, we build products that scale.
+            {siteConfig.name} blends story craft, product thinking, and engineering rigor. From portfolios to product surfaces,
+            we build experiences that stay fast, feel premium, and are simple to update.
           </p>
         </header>
 
         <section className="glass-card p-4 p-lg-5 mb-5">
           <h2 className="h3 text-white">How we partner</h2>
           <p className="text-muted mb-4">
-            We embed with your internal teams to accelerate discovery, ship the first release, and leave behind a self-sustaining
-            system. Engagements typically run across three horizons: strategy alignment, platform implementation, and growth
-            acceleration.
+            We embed with teams to clarify the narrative, design the system, and launch fast. You keep the toolkit: component
+            libraries, publishing guide, and instrumentation that makes every new release calmer.
           </p>
           <div className="d-grid gap-4 gap-lg-5">
             {pillars.map((pillar) => (
@@ -53,15 +54,15 @@ export default function AboutPage() {
           <div className="d-grid gap-3 mt-4">
             <div>
               <h3 className="h5 text-white mb-1">Avery Han — Partner, Strategy</h3>
-              <p className="text-muted mb-0">Former head of product at three unicorn startups, leads discovery and product-market fit missions.</p>
+              <p className="text-muted mb-0">Guides discovery, messaging, and IA. Former product lead across B2B and creator tools.</p>
             </div>
             <div>
               <h3 className="h5 text-white mb-1">Marcel Ortiz — Partner, Engineering</h3>
-              <p className="text-muted mb-0">Architected multi-tenant React platforms serving millions. Obsessed with performance and automation.</p>
+              <p className="text-muted mb-0">Architects resilient React platforms and observability pipelines. Obsessed with polish and performance.</p>
             </div>
             <div>
               <h3 className="h5 text-white mb-1">Riya Desai — Partner, Design</h3>
-              <p className="text-muted mb-0">Drives brand systems, interaction design, and story craft for mission-critical launches.</p>
+              <p className="text-muted mb-0">Leads visual language, interaction pacing, and editorial tone so every screen tells the same story.</p>
             </div>
           </div>
         </section>

@@ -10,10 +10,10 @@ export default function CapabilitiesSection() {
         <div className="text-center mb-5">
           <span className="badge-pill bg-opacity-10 bg-primary text-primary">Capabilities</span>
           <h2 className="display-6 fw-bold text-white mt-3" style={{ fontFamily: 'var(--font-display)' }}>
-            Modular platforms engineered for momentum
+            Versatile services for modern launches
           </h2>
           <p className="text-muted lead mt-3">
-            We connect brand storytelling, commerce, and operations through one well-instrumented React spine.
+            One studio covering storytelling, systems, and product polish—so your site can flex for campaigns, clients, and updates.
           </p>
         </div>
         <Row className="g-4">

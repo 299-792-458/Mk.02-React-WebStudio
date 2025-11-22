@@ -1,6 +1,6 @@
 'use client';
 
-const logos = ['NovaWave', 'Canvas.ai', 'Pulse Finance', 'VectorFlow', 'Nimbus Collective', 'Sierra Cloud'];
+const logos = ['Northwind', 'Meridian', 'Fieldguide', 'Aster', 'Nocturne', 'Heliotrope'];
 
 export default function LogosRibbon() {
   return (

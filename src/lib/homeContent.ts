@@ -1,71 +1,71 @@
 export const capabilityPillars = [
   {
-    title: 'Product DNA Systems',
+    title: 'Flagship Websites',
     description:
-      'Design ops, brand language, and UI kits woven into living React component libraries that stay in lockstep with growth.',
-    highlights: ['Multi-brand theming', 'Accessibility woven in', 'Design tokens sync'],
+      'Signature marketing experiences with bold art direction, purposeful motion, and SEO that withstands traffic spikes.',
+    highlights: ['Narrative-first IA', 'Motion that loads fast', 'Organic + technical SEO'],
   },
   {
-    title: 'Content Intelligence',
+    title: 'Portfolio Systems',
     description:
-      'Headless content pipelines orchestrated across regions, languages, and channels with human + AI editorial workflows.',
-    highlights: ['MDX narration', 'Localization matrix', 'AI-assisted QA'],
+      'Story frameworks for founders, studios, and creators—made of flexible MDX, CMS workflows, and case-study templates.',
+    highlights: ['Creator-friendly publishing', 'Reusable layouts', 'Social-ready assets'],
   },
   {
-    title: 'Experience Performance',
+    title: 'Product Surfaces',
     description:
-      'Production-grade Next.js infrastructure delivering <1s LCP, resiliency at global scale, and data-backed iteration loops.',
-    highlights: ['Edge-first routing', 'Core Web Vital SLAs', 'Experimentation suites'],
+      'Design-engineered onboarding, dashboards, and help spaces that make complex products feel effortless and premium.',
+    highlights: ['Design tokens + systems', 'Experiment-ready flows', 'Accessibility as default'],
   },
 ];
 
 export const playbook = [
   {
-    name: 'Discovery Sprints',
+    name: 'Direction Lab',
     description:
-      'Shape the opportunity, map stakeholders, and assemble a single source of truth that directs design, dev, and go-to-market.',
+      'Clarify the story, map the must-haves, and capture visual references so every screen reinforces the same narrative.',
   },
   {
-    name: 'Blueprint & Prototype',
+    name: 'System + Canvas',
     description:
-      'Architect the content model, integrations, and component API, then bring it to life with interactive stories and flows.',
+      'Define the content model, tokens, and component kit. Draft key pages in Figma and code to validate tone, pacing, and performance.',
   },
   {
-    name: 'Launch & Scale',
+    name: 'Ship + Evolve',
     description:
-      'Ship resilient platforms with automated testing, observability, and optimization loops that harden with every release.',
+      'Launch with instrumentation, a publishing manual, and A/B hooks. We stay close for the first cycles to refine together.',
   },
 ];
 
 export const caseStudies = [
   {
-    client: 'Lumina BioTech',
-    summary: 'Repositioned their narrative with an immersive research hub and boosted demo conversions by 62%.',
-    result: '+ 62% qualified demos',
+    client: 'Northwind Collective',
+    summary: 'Built a cinematic portfolio with modular case studies and live data visualizations for press drops.',
+    result: 'Press-ready in 4 weeks',
   },
   {
-    client: 'Orbit Commerce',
-    summary: 'Delivered a composable storefront and editorial engine powering 14 countries off a single orchestration layer.',
-    result: '14 global launches',
+    client: 'Aster Product Cloud',
+    summary: 'Reimagined onboarding and docs as a single guided surface, cutting activation time and support volume.',
+    result: '36% faster activation',
   },
   {
-    client: 'Atlas Ventures',
-    summary: 'Built an investor relations portal with realtime analytics and lightning-fast dealroom access.',
-    result: '3x faster diligence',
+    client: 'Studio Meridian',
+    summary: 'Shipped a multi-format content hub with MDX, playlists, and drop mechanics for launches and campaigns.',
+    result: '3x session depth',
   },
 ];
 
 export const testimonials = [
   {
     quote:
-      'Hypernova translated our giant wishlist into a scalable ecosystem. Every stakeholder finally has the same playbook.',
-    author: 'Naomi Park',
-    title: 'VP Digital Experience, Vertex Dynamics',
+      'Commonline gave us a portfolio we can actually grow with—publishing is fast, and the details feel handcrafted.',
+    author: 'Noel Finch',
+    title: 'Founder, Studio Meridian',
   },
   {
     quote:
-      'Their team codes like product strategists. We saw measurable lifts within weeks of go-live.',
-    author: 'Miguel Alvarez',
-    title: 'Head of Growth, Helix Commerce',
+      'They think like partners, not vendors. The launch kit and playbook made every new release calmer.',
+    author: 'June Park',
+    title: 'Product Lead, Aster',
   },
 ];

@@ -6,15 +6,15 @@ import { FaArrowRight } from 'react-icons/fa';
 import { siteConfig } from '@/lib/siteConfig';
 
 const heroHighlights = [
-  'Composable experience engines for global launches',
-  'Performance-tuned Next.js architecture with bulletproof SEO',
-  'Editorial systems that merge storytelling, commerce, and community',
+  'Flagship sites with purposeful motion and relentless performance budgets',
+  'Portfolio storytelling built from modular, MDX-powered case studies',
+  'Product surfaces that onboard, educate, and keep teams aligned',
 ];
 
 const heroStats = [
-  { label: 'Markets launched', value: '24+' },
-  { label: 'Core Web Vital score', value: '98' },
-  { label: 'Deploy cadence', value: 'Daily' },
+  { label: 'Launches delivered', value: '58' },
+  { label: 'Average LCP', value: '0.9s' },
+  { label: 'Client NPS', value: '72' },
 ];
 
 export default function Hero() {
@@ -34,7 +34,7 @@ export default function Hero() {
           <Col lg={7}>
             <span className="badge-pill bg-opacity-10 bg-primary text-primary">{siteConfig.tagline}</span>
             <h1 className="display-4 fw-bold text-white mt-3" style={{ fontFamily: 'var(--font-display)' }}>
-              We architect breakout digital flagships that never blink.
+              Web systems that feel bespoke, stay fast, and tell a sharper story.
             </h1>
             <p className="lead text-muted mt-4">{siteConfig.description}</p>
             <ul className="list-unstyled d-flex flex-column gap-2 text-muted mt-4">
@@ -75,8 +75,8 @@ export default function Hero() {
               <div className="mt-5">
                 <p className="text-muted small mb-2 text-uppercase letter-spacing-1">Trusted by teams shipping at scale</p>
                 <div className="d-flex flex-wrap gap-3">
-                  {['Aurora Labs', 'Vertex Dynamics', 'Orbit Media', 'Helix Commerce'].map((brand) => (
-                    <span key={brand} className="badge bg-opacity-10 bg-light text-light">
+                  {['Northwind', 'Meridian', 'Aster', 'Fieldguide'].map((brand) => (
+                    <span key={brand} className="badge bg-opacity-10 bg-light text-light text-uppercase letter-spacing-1">
                       {brand}
                     </span>
                   ))}
