@@ -4,12 +4,16 @@ const logos = ['Northwind', 'Meridian', 'Fieldguide', 'Aster', 'Nocturne', 'Heli
 
 export default function LogosRibbon() {
   return (
-    <section className="py-4 border-top border-bottom border-opacity-10">
+    <section className="py-4 border-top border-bottom border-opacity-10 logos-ribbon">
       <div className="studio-container">
-        <div className="d-flex flex-wrap justify-content-center gap-4 gap-lg-5 text-muted text-uppercase letter-spacing-1 small">
-          {logos.map((logo) => (
-            <span key={logo}>{logo}</span>
-          ))}
+        <div className="overflow-hidden">
+          <div className="logos-track text-muted text-uppercase letter-spacing-1 small">
+            {[...logos, ...logos].map((logo, idx) => (
+              <span key={`${logo}-${idx}`} className="me-4 me-lg-5">
+                {logo}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
     </section>

@@ -66,6 +66,19 @@ main {
 
 .hero-section {
   padding-block: clamp(5rem, 12vw, 8rem);
+  position: relative;
+}
+
+.hero-section::after {
+  content: '';
+  position: absolute;
+  inset: 6% 10%;
+  border-radius: 24px;
+  background: linear-gradient(135deg, rgba(var(--accent-glow), 0.28), rgba(11, 211, 166, 0.08));
+  filter: blur(72px);
+  opacity: 0.7;
+  animation: auroraShift 14s ease-in-out infinite alternate;
+  z-index: 0;
 }
 
 .article-container {
@@ -118,4 +131,150 @@ main {
 .prose {
   color: var(--text-secondary);
   font-size: 1.05rem;
+}
+
+.dot-accent {
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  display: inline-block;
+  box-shadow: 0 0 0 6px rgba(var(--accent-glow), 0.12);
+}
+
+.showcase-card {
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.showcase-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(var(--accent-glow), 0.24);
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.2);
+}
+
+.toolkit-grid {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.toolkit-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-shell {
+  width: 100%;
+  height: 8px;
+  background: rgba(var(--accent-glow), 0.08);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 82%;
+  background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+  border-radius: 999px;
+  animation: progressPulse 2.6s ease-in-out infinite;
+}
+
+.faq-card {
+  border: 1px solid var(--border-soft);
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.faq-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(var(--accent-glow), 0.22);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.18);
+}
+
+.logos-ribbon {
+  position: relative;
+  overflow: hidden;
+}
+
+.logos-ribbon .logos-track {
+  display: inline-flex;
+  gap: 2.5rem;
+  animation: marquee 22s linear infinite;
+  min-width: max-content;
+}
+
+.logos-ribbon:hover .logos-track {
+  animation-play-state: paused;
+}
+
+.floating-orb {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  filter: blur(40px);
+  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.18), rgba(var(--accent-glow), 0.1));
+  animation: float 12s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.floating-orb.orb-2 {
+  width: 120px;
+  height: 120px;
+  right: 6%;
+  top: 18%;
+  animation-duration: 14s;
+}
+
+.floating-orb.orb-3 {
+  width: 140px;
+  height: 140px;
+  left: 12%;
+  bottom: 4%;
+  animation-duration: 16s;
+}
+
+@keyframes auroraShift {
+  0% {
+    transform: translate3d(-6%, -4%, 0) rotate(0deg) scale(1);
+  }
+  50% {
+    transform: translate3d(3%, 4%, 0) rotate(3deg) scale(1.05);
+  }
+  100% {
+    transform: translate3d(8%, -2%, 0) rotate(-2deg) scale(1.02);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes progressPulse {
+  0% {
+    width: 70%;
+    filter: drop-shadow(0 0 8px rgba(var(--accent-glow), 0.25));
+  }
+  50% {
+    width: 90%;
+    filter: drop-shadow(0 0 12px rgba(var(--accent-glow), 0.35));
+  }
+  100% {
+    width: 82%;
+    filter: drop-shadow(0 0 8px rgba(var(--accent-glow), 0.25));
+  }
 }

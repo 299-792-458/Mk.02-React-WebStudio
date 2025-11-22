@@ -20,6 +20,9 @@ const heroStats = [
 export default function Hero() {
   return (
     <section className="hero-section position-relative overflow-hidden">
+      <div className="floating-orb orb-1" style={{ left: '65%', top: '30%' }} />
+      <div className="floating-orb orb-2" />
+      <div className="floating-orb orb-3" />
       <div className="position-absolute top-0 start-50 translate-middle-x w-100 h-100" style={{ pointerEvents: 'none' }}>
         <div
           className="w-75 h-75 mx-auto"
