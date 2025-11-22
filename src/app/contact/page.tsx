@@ -42,10 +42,10 @@ export default function ContactPage() {
         <div className="text-center mb-5">
           <span className="badge-pill bg-opacity-10 bg-primary text-primary">Start a project</span>
           <h1 className="display-5 fw-bold text-white mt-3" style={{ fontFamily: 'var(--font-display)' }}>
-            Tell us about your next build
+            Tell us about your next release
           </h1>
           <p className="text-muted mt-3">
-            Share a few details and the Hypernova squad will follow up within one business day.
+            Share a few details and the Commonline crew will follow up within one business day.
           </p>
         </div>
         <div className="glass-card p-4 p-lg-5">
@@ -79,7 +79,7 @@ export default function ContactPage() {
           </Form>
 
           <div className="mt-4 text-muted small">
-            <p className="mb-1">Prefer a direct intro? Email us at <a href="mailto:hello@hypernova.studio">hello@hypernova.studio</a>.</p>
+            <p className="mb-1">Prefer a direct intro? Email us at <a href="mailto:hello@commonline.studio">hello@commonline.studio</a>.</p>
             <p className="mb-0">We typically onboard new partners in two to four weeks.</p>
           </div>
 
