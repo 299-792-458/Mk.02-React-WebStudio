@@ -69,3 +69,52 @@ export const testimonials = [
     title: 'Product Lead, Aster',
   },
 ];
+
+export const showcaseProjects = [
+  {
+    title: 'Northwind Collective — Portfolio OS',
+    category: 'Portfolio',
+    summary: 'Cinematic case studies, live visualizations, and a CMS for weekly drops.',
+    stats: ['Press-ready in 4 weeks', 'Interactive data stories', 'Reusable launch kit'],
+  },
+  {
+    title: 'Aster Product Cloud — Guided Onboarding',
+    category: 'Product Surface',
+    summary: 'A unified onboarding + docs surface that halves activation time.',
+    stats: ['36% faster activation', 'Contextual help slots', 'Segmented journeys'],
+  },
+  {
+    title: 'Meridian Studio — Launch Hub',
+    category: 'Campaign',
+    summary: 'Modular landing kit with motion hooks for monthly releases.',
+    stats: ['3x session depth', 'Social-ready snippets', 'Motion-safe for performance'],
+  },
+];
+
+export const toolkit = [
+  { label: 'Design systems', detail: 'Tokens, theming, multi-brand libraries' },
+  { label: 'Content ops', detail: 'MDX + CMS workflows, publishing playbooks' },
+  { label: 'Performance', detail: '<1s LCP targets, observability baked-in' },
+  { label: 'Marketing stack', detail: 'SEO automation, OG pipelines, analytics dictionary' },
+  { label: 'Product UX', detail: 'Onboarding flows, docs-as-product, guided tours' },
+  { label: 'Growth loops', detail: 'Experiment harnesses, feature flags, reporting' },
+];
+
+export const faqs = [
+  {
+    question: 'What makes this a “universal” site approach?',
+    answer: 'We design a flexible IA, MDX/CMS slots, and a component kit that can flex between portfolio stories, product updates, and campaign landers without starting over.',
+  },
+  {
+    question: 'How fast can we launch?',
+    answer: 'Typical timelines are 4–6 weeks for a flagship with 6–8 key pages, QA, analytics, and a publishing guide. We front-load discovery to move quickly.',
+  },
+  {
+    question: 'Do you hand off or stay involved?',
+    answer: 'Both. You get docs, a component library, and instrumentation; we can also stay on retainer to ship new pages, experiments, and optimizations.',
+  },
+  {
+    question: 'Can you plug into our stack?',
+    answer: 'Yes. We work with your CMS, analytics, and design tools. If you prefer, we’ll set up a lean stack (MDX + headless CMS + analytics) and teach your team to run it.',
+  },
+];
