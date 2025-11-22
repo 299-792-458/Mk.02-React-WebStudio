@@ -1,0 +1,111 @@
+@import '../styles/design-tokens';
+@import '~bootstrap/scss/bootstrap';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans, 'Inter', system-ui, sans-serif);
+  background: radial-gradient(circle at top left, rgba(var(--accent-glow), 0.16), transparent 55%),
+    var(--surface-0);
+  color: var(--text-secondary);
+  min-height: 100vh;
+}
+
+a {
+  color: var(--accent-secondary);
+  text-decoration: none;
+  transition: color 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
+
+  &:hover {
+    color: var(--accent-tertiary);
+  }
+}
+
+main {
+  width: 100%;
+}
+
+.hypernova-container {
+  width: min(100% - 2rem, var(--container-max));
+  margin-inline: auto;
+}
+
+.glass-card {
+  background: var(--gradient-card);
+  backdrop-filter: blur(14px);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+  position: relative;
+  overflow: hidden;
+}
+
+.badge-pill {
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.letter-spacing-1 {
+  letter-spacing: 0.24em;
+}
+
+.hero-section {
+  padding-block: clamp(5rem, 12vw, 8rem);
+}
+
+.article-container {
+  width: min(100% - 2rem, 760px);
+  margin-inline: auto;
+}
+
+[data-article] h2,
+[data-article] h3,
+[data-article] h4 {
+  color: var(--text-primary);
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+[data-article] p {
+  line-height: 1.8;
+  margin-bottom: 1.2rem;
+  color: var(--text-secondary);
+}
+
+[data-article] ul,
+[data-article] ol {
+  margin-bottom: 1.5rem;
+  padding-left: 1.25rem;
+  color: var(--text-secondary);
+}
+
+[data-article] code {
+  background: rgba(255, 255, 255, 0.04);
+  padding: 0.1rem 0.35rem;
+  border-radius: 0.35rem;
+}
+
+[data-article] pre {
+  background: #0f172a;
+  color: #f8fafc;
+  padding: 1.25rem;
+  border-radius: var(--radius-md);
+  overflow-x: auto;
+}
+
+[data-article] blockquote {
+  border-left: 3px solid var(--accent-secondary);
+  padding-left: 1rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.prose {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+}

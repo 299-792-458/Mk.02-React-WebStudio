@@ -1,0 +1,1 @@
+We are pursuing enhancements and quality improvements to develop the current website into a representative standard model for all types of online portfolios, including blogs, news, and media.
