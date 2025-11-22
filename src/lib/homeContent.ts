@@ -118,3 +118,39 @@ export const faqs = [
     answer: 'Yes. We work with your CMS, analytics, and design tools. If you prefer, we’ll set up a lean stack (MDX + headless CMS + analytics) and teach your team to run it.',
   },
 ];
+
+export const serviceModes = [
+  {
+    label: 'Flagship Launch',
+    headline: 'Signature hero, narrative IA, and campaign-ready pages.',
+    details: ['Art direction + motion kit', 'SEO + analytics wiring', 'Publishing guide + launch checklist'],
+  },
+  {
+    label: 'Portfolio System',
+    headline: 'Case-study library, MDX story blocks, and social-ready exports.',
+    details: ['Reusable layouts', 'Inline embeds + media', 'Author workflows'],
+  },
+  {
+    label: 'Product Layer',
+    headline: 'Onboarding, docs, and help surfaces that feel premium.',
+    details: ['Guided journeys', 'Contextual tips', 'Experiment hooks + telemetry'],
+  },
+];
+
+export const launchChecklist = [
+  'Story + IA aligned with business KPIs',
+  'Tokens, components, and page templates wired',
+  'Performance budgets + lighthouse snapshots',
+  'Analytics dictionary + events implemented',
+  'SEO automation (OG, sitemap, structured data)',
+  'Publishing playbook and owner training',
+];
+
+export const momentumMetrics = [
+  { label: 'Sites launched', value: '58' },
+  { label: 'Avg. LCP', value: '0.9s' },
+  { label: 'NPS', value: '72' },
+  { label: 'Launch window', value: '4–6 wks' },
+  { label: 'Platforms integrated', value: '12+' },
+  { label: 'Case study depth', value: '3x' },
+];

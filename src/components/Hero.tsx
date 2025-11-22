@@ -53,7 +53,7 @@ export default function Hero() {
             </ul>
             <div className="d-flex flex-column flex-sm-row align-items-sm-center gap-3 mt-4">
               {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
-              <Button as={Link as any} href={siteConfig.primaryCta.href} size="lg" variant="primary" className="d-inline-flex align-items-center gap-2">
+              <Button as={Link as any} href={siteConfig.primaryCta.href} size="lg" variant="primary" className="d-inline-flex align-items-center gap-2 btn-animated">
                 {siteConfig.primaryCta.label}
                 <FaArrowRight />
               </Button>

@@ -9,15 +9,21 @@ import GlobalCta from '@/components/GlobalCta';
 import ShowcaseSection from '@/components/home/ShowcaseSection';
 import ToolkitSection from '@/components/home/ToolkitSection';
 import FaqSection from '@/components/home/FaqSection';
+import ModesSection from '@/components/home/ModesSection';
+import ChecklistSection from '@/components/home/ChecklistSection';
+import MomentumTicker from '@/components/home/MomentumTicker';
 
 export default function Home() {
   return (
     <main>
       <Hero />
       <LogosRibbon />
+      <MomentumTicker />
       <ShowcaseSection />
+      <ModesSection />
       <CapabilitiesSection />
       <ToolkitSection />
+      <ChecklistSection />
       <CaseStudiesSection />
       <PlaybookSection />
       <TestimonialsSection />

@@ -16,7 +16,7 @@ export default function GlobalCta() {
             </p>
           </div>
           <div className="d-flex flex-column flex-sm-row gap-3">
-            <Link href={siteConfig.primaryCta.href} className="btn btn-primary btn-lg fw-semibold">
+            <Link href={siteConfig.primaryCta.href} className="btn btn-primary btn-lg fw-semibold btn-animated">
               {siteConfig.primaryCta.label}
             </Link>
             <Link href="/about" className="btn btn-outline-light btn-lg">

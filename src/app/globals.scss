@@ -223,6 +223,54 @@ main {
   animation-duration: 14s;
 }
 
+.ticker-shell {
+  overflow: hidden;
+}
+
+.ticker-track {
+  display: inline-flex;
+  gap: 1rem;
+  animation: marquee 18s linear infinite;
+  min-width: max-content;
+}
+
+.ticker-pill {
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  background: linear-gradient(120deg, rgba(var(--accent-glow), 0.12), rgba(255, 255, 255, 0.04));
+  border: 1px solid rgba(var(--accent-glow), 0.16);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.btn-animated {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(120deg, var(--accent-primary), var(--accent-secondary));
+  border: none;
+  color: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-animated::after {
+  content: '';
+  position: absolute;
+  inset: -40% -20%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.28), transparent 40%);
+  transform: translateX(-120%);
+  animation: sheen 4s infinite;
+}
+
+.btn-animated:hover {
+  transform: translateY(-1px) scale(1.01);
+  box-shadow: 0 14px 30px rgba(var(--accent-glow), 0.25);
+}
+
+.checklist-grid {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
 .floating-orb.orb-3 {
   width: 140px;
   height: 140px;
@@ -276,5 +324,17 @@ main {
   100% {
     width: 82%;
     filter: drop-shadow(0 0 8px rgba(var(--accent-glow), 0.25));
+  }
+}
+
+@keyframes sheen {
+  0% {
+    transform: translateX(-120%);
+  }
+  60% {
+    transform: translateX(140%);
+  }
+  100% {
+    transform: translateX(140%);
   }
 }
