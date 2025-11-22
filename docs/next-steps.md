@@ -1,7 +1,7 @@
-# Hypernova Studio: Next Steps
+# Commonline Studio: Next Steps
 
 ## 1. Experience polish
-- Produce custom cinematic hero illustration and ambient motion to match the Hypernova narrative
+- Produce custom cinematic hero illustration and ambient motion to match the Commonline narrative
 - Enrich case studies with dedicated detail pages, interactive metrics, and embedded demos
 - Extend testimonial section with video or audio snippets powered by a lightweight media player
 
