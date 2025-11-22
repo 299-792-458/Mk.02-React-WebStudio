@@ -10,7 +10,7 @@ export default function LatestPosts() {
 
   return (
     <section className="py-5 bg-transparent">
-      <div className="hypernova-container">
+      <div className="studio-container">
         <div className="d-flex flex-column flex-lg-row justify-content-between align-items-lg-end gap-3 mb-4">
           <div>
             <span className="badge-pill bg-opacity-10 bg-primary text-primary">Insights</span>

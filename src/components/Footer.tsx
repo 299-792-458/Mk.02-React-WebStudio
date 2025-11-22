@@ -9,7 +9,7 @@ export default function Footer() {
 
   return (
     <footer className="py-5 mt-auto border-top border-1 border-opacity-10 border-white-50">
-      <Container className="hypernova-container">
+      <Container className="studio-container">
         <Row className="gy-4">
           <Col md={5}>
             <div className="badge-pill bg-opacity-10 bg-primary text-primary mb-3">{siteConfig.shortName}</div>

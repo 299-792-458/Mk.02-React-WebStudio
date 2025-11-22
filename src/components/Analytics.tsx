@@ -14,7 +14,7 @@ export default function Analytics() {
     // Stub: replace with your analytics provider (Segment, RudderStack, etc.)
     if (typeof window !== 'undefined') {
       window.dispatchEvent(
-        new CustomEvent('hypernova:page_view', {
+        new CustomEvent('commonline:page_view', {
           detail: {
             url,
             timestamp: Date.now(),

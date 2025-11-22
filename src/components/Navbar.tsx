@@ -19,12 +19,12 @@ export default function AppNavbar() {
 
   return (
     <Navbar expand="lg" sticky="top" className="py-3" bg="body">
-      <Container className="hypernova-container">
+      <Container className="studio-container">
         <Navbar.Brand as={Link} href="/" className="fw-bold text-uppercase letter-spacing-1">
           {siteConfig.shortName}
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="hypernova-navbar" />
-        <Navbar.Collapse id="hypernova-navbar" className="justify-content-end">
+        <Navbar.Toggle aria-controls="studio-navbar" />
+        <Navbar.Collapse id="studio-navbar" className="justify-content-end">
           <Nav className="align-items-lg-center">
             {siteConfig.navLinks.map((item) => (
               <Nav.Link

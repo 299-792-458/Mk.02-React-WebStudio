@@ -29,7 +29,7 @@ export default function Hero() {
           }}
         />
       </div>
-      <div className="hypernova-container position-relative">
+      <div className="studio-container position-relative">
         <Row className="align-items-center gy-5">
           <Col lg={7}>
             <span className="badge-pill bg-opacity-10 bg-primary text-primary">{siteConfig.tagline}</span>

@@ -38,7 +38,7 @@ export default function ContactPage() {
 
   return (
     <main className="py-5">
-      <div className="hypernova-container" style={{ maxWidth: '720px' }}>
+      <div className="studio-container" style={{ maxWidth: '720px' }}>
         <div className="text-center mb-5">
           <span className="badge-pill bg-opacity-10 bg-primary text-primary">Start a project</span>
           <h1 className="display-5 fw-bold text-white mt-3" style={{ fontFamily: 'var(--font-display)' }}>

@@ -4,7 +4,7 @@ import { siteConfig } from '@/lib/siteConfig';
 export default function GlobalCta() {
   return (
     <section className="py-5">
-      <div className="hypernova-container">
+      <div className="studio-container">
         <div className="glass-card p-4 p-lg-5 d-flex flex-column flex-lg-row align-items-lg-center justify-content-between gap-4">
           <div>
             <span className="badge-pill bg-opacity-10 bg-primary text-primary">Partner with us</span>

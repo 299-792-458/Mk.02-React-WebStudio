@@ -21,7 +21,7 @@ export default function AboutPage() {
 
   return (
     <main className="py-5">
-      <div className="hypernova-container">
+      <div className="studio-container">
         <header className="text-center mb-5">
           <span className="badge-pill bg-opacity-10 bg-primary text-primary">About {siteConfig.name}</span>
           <h1 className="display-5 fw-bold text-white mt-3" style={{ fontFamily: 'var(--font-display)' }}>

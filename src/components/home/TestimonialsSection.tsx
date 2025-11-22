@@ -6,7 +6,7 @@ import { FaQuoteLeft } from 'react-icons/fa';
 export default function TestimonialsSection() {
   return (
     <section className="py-5">
-      <div className="hypernova-container">
+      <div className="studio-container">
         <div className="text-center mb-5">
           <span className="badge-pill bg-opacity-10 bg-primary text-primary">Signals</span>
           <h2 className="display-6 fw-bold text-white mt-3" style={{ fontFamily: 'var(--font-display)' }}>

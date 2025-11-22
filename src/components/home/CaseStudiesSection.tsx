@@ -5,7 +5,7 @@ import { caseStudies } from '@/lib/homeContent';
 export default function CaseStudiesSection() {
   return (
     <section id="case-studies" className="py-5">
-      <div className="hypernova-container">
+      <div className="studio-container">
         <div className="d-flex flex-column flex-lg-row justify-content-between align-items-lg-end mb-4 gap-3">
           <div>
             <span className="badge-pill bg-opacity-10 bg-primary text-primary">Case Studies</span>
