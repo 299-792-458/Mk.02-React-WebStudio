@@ -25,9 +25,9 @@ export type SiteConfig = {
 export const siteConfig: SiteConfig = {
   name: 'Commonline Studio',
   shortName: 'Commonline',
-  tagline: 'Inventive web systems for portfolios, products, and launches.',
+  tagline: 'Universal-grade web systems for portfolios, products, and launches.',
   description:
-    'Commonline Studio is a multidisciplinary web atelier crafting expressive, high-performance sites for founders, makers, and modern teams.',
+    'Commonline Studio builds flagship sites that can sell, teach, and launch without swapping stacks—blending narrative craft, design systems, and performance engineering.',
   url: 'https://commonline.studio',
   keywords: [
     'web studio',
@@ -36,16 +36,20 @@ export const siteConfig: SiteConfig = {
     'design engineering',
     'product storytelling',
     'brand systems',
+    'universal website',
+    'portfolio os',
+    'launch kit',
   ],
   navLinks: [
     { label: 'Home', href: '/' },
+    { label: 'System', href: '/#system' },
     { label: 'Work', href: '/#case-studies' },
     { label: 'Services', href: '/#capabilities' },
     { label: 'Insights', href: '/blog' },
     { label: 'About', href: '/about' },
   ],
-  primaryCta: { label: 'Book a session', href: '/contact' },
-  secondaryCta: { label: 'See the work', href: '/#case-studies' },
+  primaryCta: { label: 'Plan your build', href: '/contact' },
+  secondaryCta: { label: 'See the system', href: '/#system' },
   socials: [
     { label: 'GitHub', href: 'https://github.com/commonline-studio' },
     { label: 'LinkedIn', href: 'https://www.linkedin.com/company/commonline-studio/' },

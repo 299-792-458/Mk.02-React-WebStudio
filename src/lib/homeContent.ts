@@ -1,70 +1,65 @@
 export const capabilityPillars = [
   {
-    title: 'Flagship Websites',
+    title: 'Universal Flagships',
     description:
-      'Signature marketing experiences with bold art direction, purposeful motion, and SEO that withstands traffic spikes.',
-    highlights: ['Narrative-first IA', 'Motion that loads fast', 'Organic + technical SEO'],
+      'One site that can pivot between portfolio storytelling, service proof, and product education without rewriting flows.',
+    highlights: ['Narrative + IA rails', 'Motion with performance gates', 'SEO/OG automation'],
   },
   {
-    title: 'Portfolio Systems',
+    title: 'Living Portfolio Systems',
     description:
-      'Story frameworks for founders, studios, and creators—made of flexible MDX, CMS workflows, and case-study templates.',
-    highlights: ['Creator-friendly publishing', 'Reusable layouts', 'Social-ready assets'],
+      'MDX + CMS case-study OS with playlist-style drops, reusable hero states, and social-ready exports.',
+    highlights: ['Case/story blocks', 'Drop + campaign templates', 'Author-first workflows'],
   },
   {
-    title: 'Product Surfaces',
+    title: 'Product + Service Surfaces',
     description:
-      'Design-engineered onboarding, dashboards, and help spaces that make complex products feel effortless and premium.',
-    highlights: ['Design tokens + systems', 'Experiment-ready flows', 'Accessibility as default'],
+      'Guided onboarding, docs, and service menus built on the same tokens and component kit.',
+    highlights: ['Guided walkthrough slots', 'Design tokens + theming', 'Experiments + telemetry baked in'],
   },
 ];
 
 export const playbook = [
   {
-    name: 'Direction Lab',
-    description:
-      'Clarify the story, map the must-haves, and capture visual references so every screen reinforces the same narrative.',
+    name: 'Signal & Direction',
+    description: 'Codify the win-state, proof points, and references so every screen reinforces the same narrative.',
   },
   {
-    name: 'System + Canvas',
-    description:
-      'Define the content model, tokens, and component kit. Draft key pages in Figma and code to validate tone, pacing, and performance.',
+    name: 'System Build',
+    description: 'Design tokens, story blocks, and hero/case/product canvases in Figma + code with performance guardrails.',
   },
   {
-    name: 'Ship + Evolve',
-    description:
-      'Launch with instrumentation, a publishing manual, and A/B hooks. We stay close for the first cycles to refine together.',
+    name: 'Launch & Stewardship',
+    description: 'Analytics dictionary, publishing playbook, and experiments. We stay close through the first drops.',
   },
 ];
 
 export const caseStudies = [
   {
     client: 'Northwind Collective',
-    summary: 'Built a cinematic portfolio with modular case studies and live data visualizations for press drops.',
-    result: 'Press-ready in 4 weeks',
+    summary: 'Universal flagship bridging portfolio hero, case OS, and product primers with live data moments.',
+    result: 'Press to pipeline in 4 weeks',
   },
   {
     client: 'Aster Product Cloud',
-    summary: 'Reimagined onboarding and docs as a single guided surface, cutting activation time and support volume.',
+    summary: 'Guided onboarding and docs on the same system, trimming activation friction.',
     result: '36% faster activation',
   },
   {
     client: 'Studio Meridian',
-    summary: 'Shipped a multi-format content hub with MDX, playlists, and drop mechanics for launches and campaigns.',
+    summary: 'Campaign hub composed from portfolio blocks, tuned for monthly drops.',
     result: '3x session depth',
   },
 ];
 
 export const testimonials = [
   {
-    quote:
-      'Commonline gave us a portfolio we can actually grow with—publishing is fast, and the details feel handcrafted.',
+    quote: 'Commonline built us a system, not a site—case studies, product explainers, and drops feel consistent and fast.',
     author: 'Noel Finch',
     title: 'Founder, Studio Meridian',
   },
   {
-    quote:
-      'They think like partners, not vendors. The launch kit and playbook made every new release calmer.',
+    quote: 'The universal kit means shipping updates is calm. Performance and analytics came wired from day one.',
     author: 'June Park',
     title: 'Product Lead, Aster',
   },
@@ -72,46 +67,47 @@ export const testimonials = [
 
 export const showcaseProjects = [
   {
-    title: 'Northwind Collective — Portfolio OS',
-    category: 'Portfolio',
-    summary: 'Cinematic case studies, live visualizations, and a CMS for weekly drops.',
-    stats: ['Press-ready in 4 weeks', 'Interactive data stories', 'Reusable launch kit'],
+    title: 'Northwind Collective — Universal Flagship',
+    category: 'Flagship System',
+    summary: 'Portfolio OS that doubles as a product primer and press hub.',
+    stats: ['Press to pipeline in 4 weeks', 'Case OS + live data', 'Reusable launch kit'],
   },
   {
-    title: 'Aster Product Cloud — Guided Onboarding',
+    title: 'Aster Product Cloud — Guided Layer',
     category: 'Product Surface',
-    summary: 'A unified onboarding + docs surface that halves activation time.',
+    summary: 'Unified onboarding + docs powered by the same narrative system.',
     stats: ['36% faster activation', 'Contextual help slots', 'Segmented journeys'],
   },
   {
-    title: 'Meridian Studio — Launch Hub',
+    title: 'Meridian Studio — Drop Engine',
     category: 'Campaign',
-    summary: 'Modular landing kit with motion hooks for monthly releases.',
-    stats: ['3x session depth', 'Social-ready snippets', 'Motion-safe for performance'],
+    summary: 'Launch hub built from MDX drop blocks and social-ready exports.',
+    stats: ['3x session depth', 'Campaign playlists', 'Motion-safe for performance'],
   },
 ];
 
 export const toolkit = [
-  { label: 'Design systems', detail: 'Tokens, theming, multi-brand libraries' },
-  { label: 'Content ops', detail: 'MDX + CMS workflows, publishing playbooks' },
-  { label: 'Performance', detail: '<1s LCP targets, observability baked-in' },
-  { label: 'Marketing stack', detail: 'SEO automation, OG pipelines, analytics dictionary' },
-  { label: 'Product UX', detail: 'Onboarding flows, docs-as-product, guided tours' },
-  { label: 'Growth loops', detail: 'Experiment harnesses, feature flags, reporting' },
+  { label: 'Narrative system', detail: 'IA + story rails spanning portfolio, product, and services' },
+  { label: 'Publishing OS', detail: 'MDX + CMS workflows, OG/SEO automation, social crops' },
+  { label: 'Design tokens', detail: 'Multi-brand themes, motion ramps, accessibility defaults' },
+  { label: 'Performance + QA', detail: '<1s LCP targets, visual regression and a11y checks' },
+  { label: 'Analytics + growth', detail: 'Event dictionary, dashboards, experiment harness' },
+  { label: 'Launch kit', detail: 'Campaign templates, press packs, governance rituals' },
 ];
 
 export const faqs = [
   {
     question: 'What makes this a “universal” site approach?',
-    answer: 'We design a flexible IA, MDX/CMS slots, and a component kit that can flex between portfolio stories, product updates, and campaign landers without starting over.',
+    answer:
+      'One IA, content model, and component kit serves portfolio pages, product education, and campaign landers. You avoid parallel builds and keep the same performance, analytics, and design system everywhere.',
   },
   {
     question: 'How fast can we launch?',
-    answer: 'Typical timelines are 4–6 weeks for a flagship with 6–8 key pages, QA, analytics, and a publishing guide. We front-load discovery to move quickly.',
+    answer: 'Typical timelines are 4–6 weeks for a flagship with 6–8 key pages, QA, analytics, and a publishing guide. Discovery is front-loaded so we move fast without sacrificing craft.',
   },
   {
     question: 'Do you hand off or stay involved?',
-    answer: 'Both. You get docs, a component library, and instrumentation; we can also stay on retainer to ship new pages, experiments, and optimizations.',
+    answer: 'Both. You get docs, a component library, governance, and instrumentation; we can also stay on retainer to ship new pages, experiments, and optimizations.',
   },
   {
     question: 'Can you plug into our stack?',
@@ -121,14 +117,14 @@ export const faqs = [
 
 export const serviceModes = [
   {
-    label: 'Flagship Launch',
-    headline: 'Signature hero, narrative IA, and campaign-ready pages.',
-    details: ['Art direction + motion kit', 'SEO + analytics wiring', 'Publishing guide + launch checklist'],
+    label: 'Universal Flagship',
+    headline: 'One system covering portfolio, product education, and launch drops.',
+    details: ['Narrative + IA rails', 'Hero, case, and product canvases', 'Performance + analytics ready'],
   },
   {
-    label: 'Portfolio System',
-    headline: 'Case-study library, MDX story blocks, and social-ready exports.',
-    details: ['Reusable layouts', 'Inline embeds + media', 'Author workflows'],
+    label: 'Portfolio Capsule',
+    headline: 'Cinematic case-study OS with MDX drop mechanics and social exports.',
+    details: ['Reusable case blocks', 'Drop + playlist templates', 'Press + social kits'],
   },
   {
     label: 'Product Layer',
@@ -138,19 +134,47 @@ export const serviceModes = [
 ];
 
 export const launchChecklist = [
-  'Story + IA aligned with business KPIs',
-  'Tokens, components, and page templates wired',
-  'Performance budgets + lighthouse snapshots',
+  'Narrative + IA aligned for portfolio/product/launch',
+  'Tokens, components, and page templates wired with docs',
+  'Performance budgets, motion ramps, and accessibility checks',
   'Analytics dictionary + events implemented',
   'SEO automation (OG, sitemap, structured data)',
-  'Publishing playbook and owner training',
+  'Publishing playbook, governance, and owner training',
 ];
 
 export const momentumMetrics = [
-  { label: 'Sites launched', value: '58' },
+  { label: 'Universal builds', value: '58' },
+  { label: 'Reusable modules', value: '120+' },
   { label: 'Avg. LCP', value: '0.9s' },
-  { label: 'NPS', value: '72' },
+  { label: 'Update to live', value: '<20m' },
   { label: 'Launch window', value: '4–6 wks' },
-  { label: 'Platforms integrated', value: '12+' },
-  { label: 'Case study depth', value: '3x' },
+  { label: 'Experiments ready', value: '100%' },
+];
+
+export const universalLayers = [
+  {
+    title: 'Identity Layer',
+    tag: 'Portfolio + Proof',
+    description: 'Cinematic hero, modular case library, and credibility frames for press and BD.',
+    signals: ['Narrative IA + story rails', 'MDX drops + playlists', 'OG + SEO automation'],
+  },
+  {
+    title: 'Experience Layer',
+    tag: 'Product + Service',
+    description: 'Guided onboarding, service menus, and docs built on the same tokens and component kit.',
+    signals: ['Guided walkthrough slots', 'Design tokens + theming', 'Accessibility + performance gates'],
+  },
+  {
+    title: 'Operations Layer',
+    tag: 'Launch + Growth',
+    description: 'Campaign landers, analytics dictionary, and experimentation hooks with governance.',
+    signals: ['Launch kit + experiments', 'Analytics + event schemas', 'Performance dashboards + alerts'],
+  },
+];
+
+export const systemSignals = [
+  { label: 'Use cases covered', value: 'Portfolio · Product · Launch' },
+  { label: 'Reusable modules', value: '120+' },
+  { label: 'Update time', value: '<20m' },
+  { label: 'Performance budget', value: '<1s LCP' },
 ];
