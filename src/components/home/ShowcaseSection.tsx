@@ -11,10 +11,10 @@ export default function ShowcaseSection() {
           <div>
             <span className="badge-pill bg-opacity-10 bg-primary text-primary">Showcase</span>
             <h2 className="display-6 fw-bold text-white mt-3" style={{ fontFamily: 'var(--font-display)' }}>
-              Built to flex across use cases
+              Universal builds in the wild
             </h2>
             <p className="text-muted mb-0">
-              Portfolio drops, product onboarding, or campaign landers—each kit is adaptable and instrumentation-ready.
+              Portfolio proof, product education, or launch drops—the same system holds up under each mode.
             </p>
           </div>
           <div className="text-muted small text-uppercase letter-spacing-1">Recent builds</div>

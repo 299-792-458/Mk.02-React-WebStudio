@@ -12,7 +12,7 @@ export default function ToolkitSection() {
             A universal stack, tailored to you
           </h2>
           <p className="text-muted mt-3">
-            Design systems, content ops, and growth instrumentation packaged into a launch kit you can run without us.
+            Narrative rails, publishing ops, and growth instrumentation prewired into a kit you can run without us.
           </p>
         </div>
         <div className="d-grid gap-3 toolkit-grid">

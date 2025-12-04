@@ -7,13 +7,27 @@
 
 body {
   font-family: var(--font-sans, 'Inter', system-ui, sans-serif);
+  position: relative;
   background:
-    radial-gradient(circle at 16% 18%, rgba(var(--accent-glow), 0.18), transparent 42%),
-    radial-gradient(circle at 78% 0%, rgba(11, 211, 166, 0.12), transparent 32%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(0, 0, 0, 0.02)),
+    radial-gradient(circle at 14% 18%, rgba(var(--accent-glow), 0.16), transparent 34%),
+    radial-gradient(circle at 82% 8%, rgba(126, 208, 255, 0.16), transparent 30%),
+    linear-gradient(120deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0)),
     var(--surface-0);
   color: var(--text-secondary);
   min-height: 100vh;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 140px 140px, 140px 140px;
+  opacity: 0.35;
+  pointer-events: none;
+  z-index: 0;
 }
 
 a {
@@ -36,7 +50,9 @@ main {
 }
 
 .glass-card {
-  background: var(--gradient-card);
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0)),
+    var(--gradient-card);
   backdrop-filter: blur(14px);
   border: 1px solid var(--border-soft);
   border-radius: var(--radius-md);
@@ -74,7 +90,7 @@ main {
   position: absolute;
   inset: 6% 10%;
   border-radius: 24px;
-  background: linear-gradient(135deg, rgba(var(--accent-glow), 0.28), rgba(11, 211, 166, 0.08));
+  background: linear-gradient(135deg, rgba(var(--accent-glow), 0.24), rgba(126, 208, 255, 0.12));
   filter: blur(72px);
   opacity: 0.7;
   animation: auroraShift 14s ease-in-out infinite alternate;
@@ -159,6 +175,26 @@ main {
 .toolkit-card {
   position: relative;
   overflow: hidden;
+}
+
+.system-card {
+  border: 1px solid rgba(var(--accent-glow), 0.18);
+  background: linear-gradient(145deg, rgba(var(--accent-glow), 0.08), rgba(126, 208, 255, 0.06), rgba(255, 157, 111, 0.05));
+  box-shadow: 0 32px 70px rgba(0, 0, 0, 0.35);
+}
+
+.system-tile {
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-soft);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0));
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.2);
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.system-tile:hover {
+  transform: translateY(-6px);
+  border-color: rgba(var(--accent-glow), 0.3);
+  box-shadow: 0 26px 55px rgba(0, 0, 0, 0.35);
 }
 
 .progress-shell {

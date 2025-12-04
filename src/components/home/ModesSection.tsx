@@ -14,10 +14,10 @@ export default function ModesSection() {
           <div>
             <span className="badge-pill bg-opacity-10 bg-primary text-primary">Service Modes</span>
             <h2 className="display-6 fw-bold text-white mt-3" style={{ fontFamily: 'var(--font-display)' }}>
-              Choose the mode, keep the momentum
+              Pick the starting mode, keep one system
             </h2>
             <p className="text-muted mb-0">
-              Switchable delivery modes so we can support a flagship launch, ongoing portfolio drops, or product-layer polish.
+              We tune the engagement to universal flagship, portfolio capsule, or product layer while keeping the same system and governance underneath.
             </p>
           </div>
           <div className="d-flex flex-wrap gap-2">

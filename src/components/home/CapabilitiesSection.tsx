@@ -10,10 +10,11 @@ export default function CapabilitiesSection() {
         <div className="text-center mb-5">
           <span className="badge-pill bg-opacity-10 bg-primary text-primary">Capabilities</span>
           <h2 className="display-6 fw-bold text-white mt-3" style={{ fontFamily: 'var(--font-display)' }}>
-            Versatile services for modern launches
+            The universal capability map
           </h2>
           <p className="text-muted lead mt-3">
-            One studio covering storytelling, systems, and product polish—so your site can flex for campaigns, clients, and updates.
+            Identity, experience, and operations layers built by one crew so your flagship can flex between portfolio proof,
+            product clarity, and launch drops.
           </p>
         </div>
         <Row className="g-4">

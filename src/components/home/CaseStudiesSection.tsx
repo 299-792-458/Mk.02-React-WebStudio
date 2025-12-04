@@ -10,11 +10,11 @@ export default function CaseStudiesSection() {
           <div>
             <span className="badge-pill bg-opacity-10 bg-primary text-primary">Case Studies</span>
             <h2 className="display-6 fw-bold text-white mt-3" style={{ fontFamily: 'var(--font-display)' }}>
-              Proof in the wild
+              Proof the universal system works
             </h2>
           </div>
           <p className="text-muted mb-0" style={{ maxWidth: '520px' }}>
-            Every build ships with clear KPIs and a publishing guide. Here’s how Commonline Studio has helped teams look and perform better.
+            Every build ships with clear KPIs and a publishing guide. Here’s how the system performs across portfolio, product, and launch use cases.
           </p>
         </div>
         <div className="d-grid gap-4">

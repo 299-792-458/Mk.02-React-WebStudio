@@ -9,10 +9,11 @@ export default function GlobalCta() {
           <div>
             <span className="badge-pill bg-opacity-10 bg-primary text-primary">Partner with us</span>
             <h2 className="h2 text-white mt-3" style={{ fontFamily: 'var(--font-display)' }}>
-              Ready to build a site that works as hard as you do?
+              Ready to ship the universal flagship?
             </h2>
             <p className="text-muted mb-0" style={{ maxWidth: '520px' }}>
-              We embed a lean, senior crew across strategy, design, and engineering to launch an adaptive site you can evolve without friction.
+              We embed a lean, senior crew across strategy, design, and engineering to launch one system that can sell, teach,
+              and launch without friction.
             </p>
           </div>
           <div className="d-flex flex-column flex-sm-row gap-3">
