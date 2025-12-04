@@ -178,3 +178,64 @@ export const systemSignals = [
   { label: 'Update time', value: '<20m' },
   { label: 'Performance budget', value: '<1s LCP' },
 ];
+
+export const deepSystems = [
+  {
+    title: 'Motion Lab',
+    tag: 'Animation',
+    description: 'GPU-friendly micro-interactions, scroll-linked reveals, and orchestration rules with performance gates.',
+    metric: 'Frame budget: 12ms',
+  },
+  {
+    title: 'Performance Bench',
+    tag: 'Perf + QA',
+    description: 'RUM + synthetic tracking, LCP/CLS guardrails, script gating, and regression snapshots on every release.',
+    metric: 'P95 LCP: 0.9s',
+  },
+  {
+    title: 'Publishing OS',
+    tag: 'Content Ops',
+    description: 'MDX + CMS flows, OG/SEO automation, social crops, and a release checklist for product + portfolio.',
+    metric: 'Update to live: <20m',
+  },
+  {
+    title: 'Observability',
+    tag: 'Analytics',
+    description: 'Event dictionary, dashboards, error budgets, and feature flag hooks ready for experiments.',
+    metric: 'Telemetry: 100%',
+  },
+];
+
+export const performanceSignals = [
+  { label: 'Core Web Vitals', value: '99/100' },
+  { label: 'CLS', value: '0.01' },
+  { label: 'Bundle discipline', value: '<160kb route' },
+  { label: 'Edge-ready', value: 'CDN + image opts' },
+];
+
+export const scrollScenes = [
+  {
+    title: 'Calibrate',
+    label: 'Signal & guardrails',
+    description: 'Set narrative rails, performance budgets, and interaction tone with references and prototypes.',
+    kpi: 'Direction locked in week 1',
+  },
+  {
+    title: 'Compose',
+    label: 'System build',
+    description: 'Ship tokens, motion ramps, and modular story blocks with analytics and SEO wiring.',
+    kpi: 'Design + code in lockstep',
+  },
+  {
+    title: 'Orchestrate',
+    label: 'Scroll + states',
+    description: 'Scroll-linked reveals, sticky narratives, and stateful UI that stay under frame budgets.',
+    kpi: '<12ms interactions',
+  },
+  {
+    title: 'Release',
+    label: 'Launch & govern',
+    description: 'QA, accessibility, RUM, and experiments. Shipping playbook with clear ownership and cadence.',
+    kpi: 'Go-live 4–6 weeks',
+  },
+];

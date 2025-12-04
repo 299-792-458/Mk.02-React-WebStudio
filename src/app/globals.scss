@@ -30,6 +30,25 @@ body::before {
   z-index: 0;
 }
 
+.scroll-progress-shell {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.04);
+  z-index: 1100;
+  pointer-events: none;
+}
+
+.scroll-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+  box-shadow: 0 0 20px rgba(var(--accent-glow), 0.3);
+  transform-origin: left;
+  transition: width 0.1s ease-out;
+}
+
 a {
   color: var(--accent-secondary);
   text-decoration: none;
@@ -47,6 +66,34 @@ main {
 .studio-container {
   width: min(100% - 2rem, var(--container-max));
   margin-inline: auto;
+}
+
+.reveal-base {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+  will-change: opacity, transform;
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: none;
+}
+
+.reveal-slide-left {
+  transform: translateX(-28px);
+}
+
+.reveal-slide-right {
+  transform: translateX(28px);
+}
+
+.reveal-zoom {
+  transform: scale(0.96);
+}
+
+.reveal-lift {
+  transform: translateY(26px);
 }
 
 .glass-card {
@@ -211,6 +258,90 @@ main {
   background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
   border-radius: 999px;
   animation: progressPulse 2.6s ease-in-out infinite;
+}
+
+.innovation-card {
+  overflow: hidden;
+  position: relative;
+  border: 1px solid rgba(var(--accent-glow), 0.2);
+}
+
+.innovation-glow {
+  position: absolute;
+  inset: 10%;
+  background: radial-gradient(circle at 20% 30%, rgba(var(--accent-glow), 0.25), transparent 40%);
+  filter: blur(60px);
+  opacity: 0.65;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.innovation-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.scene-sticky {
+  top: 110px;
+}
+
+.scene-graphic {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(var(--accent-glow), 0.22), rgba(126, 208, 255, 0.12));
+  border: 1px solid rgba(var(--accent-glow), 0.2);
+}
+
+.scene-gradient {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.08), transparent 40%);
+  filter: blur(40px);
+}
+
+.scene-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+  opacity: 0.5;
+}
+
+.scene-orb {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  filter: blur(30px);
+  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.12), rgba(var(--accent-glow), 0.16));
+  animation: float 14s ease-in-out infinite;
+}
+
+.scene-orb-1 {
+  left: 12%;
+  top: 16%;
+}
+
+.scene-orb-2 {
+  right: 6%;
+  bottom: 10%;
+  animation-duration: 16s;
+}
+
+.scene-step {
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+  border: 1px solid var(--border-soft);
+}
+
+.scene-step-active {
+  transform: translateY(-6px);
+  border-color: rgba(var(--accent-glow), 0.35);
+  box-shadow: 0 26px 55px rgba(0, 0, 0, 0.35);
 }
 
 .faq-card {

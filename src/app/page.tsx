@@ -13,6 +13,8 @@ import ModesSection from '@/components/home/ModesSection';
 import ChecklistSection from '@/components/home/ChecklistSection';
 import MomentumTicker from '@/components/home/MomentumTicker';
 import UniversalSystemSection from '@/components/home/UniversalSystemSection';
+import ScrollScenesSection from '@/components/home/ScrollScenesSection';
+import InnovationStackSection from '@/components/home/InnovationStackSection';
 
 export default function Home() {
   return (
@@ -21,6 +23,8 @@ export default function Home() {
       <LogosRibbon />
       <MomentumTicker />
       <UniversalSystemSection />
+      <ScrollScenesSection />
+      <InnovationStackSection />
       <ShowcaseSection />
       <ModesSection />
       <CapabilitiesSection />

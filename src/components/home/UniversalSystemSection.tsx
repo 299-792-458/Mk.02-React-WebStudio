@@ -2,6 +2,7 @@
 
 import { Row, Col } from 'react-bootstrap';
 import { universalLayers, systemSignals } from '@/lib/homeContent';
+import ViewportReveal from '@/components/ViewportReveal';
 
 export default function UniversalSystemSection() {
   return (
@@ -28,24 +29,26 @@ export default function UniversalSystemSection() {
             </div>
           </div>
           <Row className="g-3 g-lg-4">
-            {universalLayers.map((layer) => (
+            {universalLayers.map((layer, idx) => (
               <Col key={layer.title} md={4}>
-                <div className="system-tile h-100 p-3 p-lg-4">
-                  <div className="d-flex justify-content-between align-items-center mb-2">
-                    <span className="badge rounded-pill bg-opacity-10 bg-primary text-primary">{layer.tag}</span>
-                    <span className="text-muted small letter-spacing-1">Layer</span>
+                <ViewportReveal variant={idx % 2 === 0 ? 'slide-left' : 'slide-right'} delay={idx * 120}>
+                  <div className="system-tile h-100 p-3 p-lg-4">
+                    <div className="d-flex justify-content-between align-items-center mb-2">
+                      <span className="badge rounded-pill bg-opacity-10 bg-primary text-primary">{layer.tag}</span>
+                      <span className="text-muted small letter-spacing-1">Layer</span>
+                    </div>
+                    <h3 className="h5 text-white">{layer.title}</h3>
+                    <p className="text-muted small mb-3">{layer.description}</p>
+                    <ul className="list-unstyled d-flex flex-column gap-2 mb-0">
+                      {layer.signals.map((signal) => (
+                        <li key={signal} className="d-flex align-items-center gap-2 text-muted small">
+                          <span className="dot-accent" />
+                          <span>{signal}</span>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
-                  <h3 className="h5 text-white">{layer.title}</h3>
-                  <p className="text-muted small mb-3">{layer.description}</p>
-                  <ul className="list-unstyled d-flex flex-column gap-2 mb-0">
-                    {layer.signals.map((signal) => (
-                      <li key={signal} className="d-flex align-items-center gap-2 text-muted small">
-                        <span className="dot-accent" />
-                        <span>{signal}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                </ViewportReveal>
               </Col>
             ))}
           </Row>

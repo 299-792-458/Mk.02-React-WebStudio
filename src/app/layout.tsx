@@ -7,6 +7,7 @@ import Footer from '@/components/Footer';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import { siteConfig } from '@/lib/siteConfig';
 import Analytics from '@/components/Analytics';
+import ScrollProgressBar from '@/components/ScrollProgressBar';
 
 const sans = Plus_Jakarta_Sans({
   subsets: ['latin'],
@@ -57,6 +58,7 @@ export default function RootLayout({
     <html lang="en" className="h-100" suppressHydrationWarning>
       <body className={`${sans.variable} ${display.variable} d-flex flex-column min-vh-100`}>
         <ThemeProvider attribute="data-bs-theme" defaultTheme="system" enableSystem>
+          <ScrollProgressBar />
           <AppNavbar />
           <div style={{ flex: '1 0 auto' }}>{children}</div>
           <Footer />
