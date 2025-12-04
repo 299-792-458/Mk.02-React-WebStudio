@@ -262,6 +262,24 @@ export const engineeringPillars = [
   'Automated accessibility + visual regression sweeps per release',
 ];
 
+export const architectureLayers = [
+  {
+    name: 'Experience Layer',
+    description: 'Hero, case, product, and launch canvases driven by a single component kit and motion ramps.',
+    tech: ['React 19', 'Framer Motion-lite', 'Design tokens'],
+  },
+  {
+    name: 'Content + Data Layer',
+    description: 'MDX + CMS + graph of references for stories, drops, and product primers with OG/SEO automation.',
+    tech: ['MDX', 'Headless CMS', 'OG pipeline'],
+  },
+  {
+    name: 'Delivery Layer',
+    description: 'Edge-aware rendering, smart cache hints, image/CDN optimization, and telemetry hooks.',
+    tech: ['Next.js Edge/Node', 'Image CDN', 'RUM + traces'],
+  },
+];
+
 export const scrollScenes = [
   {
     title: 'Calibrate',

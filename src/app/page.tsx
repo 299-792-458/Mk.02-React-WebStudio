@@ -17,6 +17,7 @@ import ScrollScenesSection from '@/components/home/ScrollScenesSection';
 import InnovationStackSection from '@/components/home/InnovationStackSection';
 import ShowreelSection from '@/components/home/ShowreelSection';
 import PerformanceWallSection from '@/components/home/PerformanceWallSection';
+import ArchitectureSection from '@/components/home/ArchitectureSection';
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
       <InnovationStackSection />
       <ShowreelSection />
       <ShowcaseSection />
+      <ArchitectureSection />
       <ModesSection />
       <CapabilitiesSection />
       <ToolkitSection />

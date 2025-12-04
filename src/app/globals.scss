@@ -405,6 +405,25 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
+.stack-layers {
+  display: grid;
+  gap: 1rem;
+  position: relative;
+}
+
+.stack-card {
+  border: 1px solid rgba(var(--accent-glow), 0.16);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+  transform-style: preserve-3d;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.stack-card:hover {
+  transform: translateY(-6px) rotateX(4deg) rotateY(-4deg);
+  border-color: rgba(var(--accent-glow), 0.3);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.4);
+}
+
 .faq-card {
   border: 1px solid var(--border-soft);
   transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
