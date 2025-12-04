@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { useEffect, useRef, useState } from 'react';
 import { Button, Row, Col } from 'react-bootstrap';
 import { FaArrowRight } from 'react-icons/fa';
 import { siteConfig } from '@/lib/siteConfig';
@@ -24,11 +25,30 @@ const heroModes = [
 ];
 
 export default function Hero() {
+  const [parallax, setParallax] = useState({ x: 0, y: 0 });
+  const frame = useRef<number | null>(null);
+
+  useEffect(() => {
+    return () => {
+      if (frame.current) cancelAnimationFrame(frame.current);
+    };
+  }, []);
+
+  const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
+    const { clientX, clientY, currentTarget } = event;
+    const rect = currentTarget.getBoundingClientRect();
+    const x = ((clientX - rect.left) / rect.width - 0.5) * 16;
+    const y = ((clientY - rect.top) / rect.height - 0.5) * 12;
+    if (frame.current) cancelAnimationFrame(frame.current);
+    frame.current = requestAnimationFrame(() => setParallax({ x, y }));
+  };
+
   return (
-    <section className="hero-section position-relative overflow-hidden">
+    <section className="hero-section position-relative overflow-hidden" onMouseMove={handleMouseMove}>
       <div className="floating-orb orb-1" style={{ left: '65%', top: '30%' }} />
       <div className="floating-orb orb-2" />
       <div className="floating-orb orb-3" />
+      <div className="hero-parallax" style={{ transform: `translate3d(${parallax.x}px, ${parallax.y}px, 0)` }} />
       <div className="position-absolute top-0 start-50 translate-middle-x w-100 h-100" style={{ pointerEvents: 'none' }}>
         <div
           className="w-75 h-75 mx-auto"

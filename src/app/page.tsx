@@ -15,6 +15,8 @@ import MomentumTicker from '@/components/home/MomentumTicker';
 import UniversalSystemSection from '@/components/home/UniversalSystemSection';
 import ScrollScenesSection from '@/components/home/ScrollScenesSection';
 import InnovationStackSection from '@/components/home/InnovationStackSection';
+import ShowreelSection from '@/components/home/ShowreelSection';
+import PerformanceWallSection from '@/components/home/PerformanceWallSection';
 
 export default function Home() {
   return (
@@ -25,12 +27,14 @@ export default function Home() {
       <UniversalSystemSection />
       <ScrollScenesSection />
       <InnovationStackSection />
+      <ShowreelSection />
       <ShowcaseSection />
       <ModesSection />
       <CapabilitiesSection />
       <ToolkitSection />
       <ChecklistSection />
       <CaseStudiesSection />
+      <PerformanceWallSection />
       <PlaybookSection />
       <TestimonialsSection />
       <FaqSection />

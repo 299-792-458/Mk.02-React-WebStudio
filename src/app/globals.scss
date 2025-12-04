@@ -144,6 +144,19 @@ main {
   z-index: 0;
 }
 
+.hero-parallax {
+  position: absolute;
+  inset: 12% 8%;
+  border-radius: 30px;
+  background: radial-gradient(circle at 30% 40%, rgba(var(--accent-glow), 0.2), transparent 45%),
+    linear-gradient(135deg, rgba(126, 208, 255, 0.18), rgba(255, 157, 111, 0.12));
+  filter: blur(50px);
+  opacity: 0.6;
+  transition: transform 0.3s ease-out;
+  pointer-events: none;
+  z-index: 0;
+}
+
 .article-container {
   width: min(100% - 2rem, 760px);
   margin-inline: auto;
