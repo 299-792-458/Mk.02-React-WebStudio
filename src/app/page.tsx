@@ -12,6 +12,7 @@ import FaqSection from '@/components/home/FaqSection';
 import ModesSection from '@/components/home/ModesSection';
 import ChecklistSection from '@/components/home/ChecklistSection';
 import MomentumTicker from '@/components/home/MomentumTicker';
+import UniversalSystemSection from '@/components/home/UniversalSystemSection';
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Hero />
       <LogosRibbon />
       <MomentumTicker />
+      <UniversalSystemSection />
       <ShowcaseSection />
       <ModesSection />
       <CapabilitiesSection />
