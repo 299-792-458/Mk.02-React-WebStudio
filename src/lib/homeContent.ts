@@ -213,6 +213,55 @@ export const performanceSignals = [
   { label: 'Edge-ready', value: 'CDN + image opts' },
 ];
 
+export const showreel = [
+  {
+    title: 'Spatial Story',
+    type: 'Interactive Case',
+    description: 'Layered parallax hero with scroll-synced data loops and inline media crops.',
+    metric: '4.6x time on page',
+    tech: ['Next.js', 'Edge Images', 'Shiki embeds'],
+  },
+  {
+    title: 'Product Prism',
+    type: 'Product Layer',
+    description: 'Guided walkthroughs, token-driven theming, and sticky timeline for feature reveals.',
+    metric: 'P95 LCP 0.9s',
+    tech: ['Framer Motion-lite', 'ARIA-first', 'Feature flags'],
+  },
+  {
+    title: 'Launch Engine',
+    type: 'Campaign Kit',
+    description: 'Scroll-snapped drop cards, press pack generator, and OG automation pipeline.',
+    metric: 'Launch window 4 wks',
+    tech: ['MDX drops', 'OG pipeline', 'Segment hooks'],
+  },
+  {
+    title: 'Docs-as-Product',
+    type: 'Knowledge',
+    description: 'Contextual help layer with sticky progress, quick jumps, and keyboardable navigation.',
+    metric: 'Support tickets -28%',
+    tech: ['Content graph', 'Keyboard nav', 'Sticky state'],
+  },
+];
+
+export const performanceWall = [
+  { label: 'Runtime parity', value: 'Edge + Node', detail: 'SSR/ISR tuned per page type' },
+  { label: 'Motion budget', value: '<12ms', detail: 'GPU-friendly transforms, reduced-motion safe' },
+  { label: 'Accessibility', value: 'AA/AAA', detail: 'Focus rings, aria patterns, keyboard paths' },
+  { label: 'Launch cadence', value: 'Bi-weekly', detail: 'Governance + release checklist' },
+  { label: 'Observability', value: '100%', detail: 'Events, traces, errors, dashboards' },
+  { label: 'Payloads', value: '<160kb', detail: 'Route-based budgets + script gating' },
+];
+
+export const engineeringPillars = [
+  'Edge-first rendering, smart cache hints, and image/CDN optimization',
+  'Design tokens controlling motion ramps, elevation, and color theming',
+  'Scroll-linked animations that degrade gracefully with reduced motion',
+  'MDX + CMS publishing with OG/SEO automation and social crops',
+  'Instrumentation baked in: analytics dictionary, feature flags, and QA hooks',
+  'Automated accessibility + visual regression sweeps per release',
+];
+
 export const scrollScenes = [
   {
     title: 'Calibrate',
