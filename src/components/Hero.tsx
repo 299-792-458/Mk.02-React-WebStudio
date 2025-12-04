@@ -6,15 +6,21 @@ import { FaArrowRight } from 'react-icons/fa';
 import { siteConfig } from '@/lib/siteConfig';
 
 const heroHighlights = [
-  'Flagship sites with purposeful motion and relentless performance budgets',
-  'Portfolio storytelling built from modular, MDX-powered case studies',
-  'Product surfaces that onboard, educate, and keep teams aligned',
+  'One IA and design system that flexes between portfolio, product, and launch drops',
+  'Motion with performance guardrails—<1s LCP targets and accessibility baked in',
+  'Publishing OS with MDX + CMS, OG automation, and analytics instrumentation',
 ];
 
 const heroStats = [
-  { label: 'Launches delivered', value: '58' },
-  { label: 'Average LCP', value: '0.9s' },
-  { label: 'Client NPS', value: '72' },
+  { label: 'Universal builds', value: '58' },
+  { label: 'Reusable modules', value: '120+' },
+  { label: 'Update to live', value: '<20m' },
+];
+
+const heroModes = [
+  { title: 'Portfolio OS', description: 'Cinematic hero, case-study library, social-ready exports' },
+  { title: 'Product Layer', description: 'Onboarding, docs, and service menus that stay on-brand' },
+  { title: 'Launch Kit', description: 'Campaign landers, press packs, and experiment hooks' },
 ];
 
 export default function Hero() {
@@ -37,9 +43,12 @@ export default function Hero() {
           <Col lg={7}>
             <span className="badge-pill bg-opacity-10 bg-primary text-primary">{siteConfig.tagline}</span>
             <h1 className="display-4 fw-bold text-white mt-3" style={{ fontFamily: 'var(--font-display)' }}>
-              Web systems that feel bespoke, stay fast, and tell a sharper story.
+              One universal-grade site for portfolio, product, and launch.
             </h1>
-            <p className="lead text-muted mt-4">{siteConfig.description}</p>
+            <p className="lead text-muted mt-4">
+              We architect a flagship system that can sell, teach, and launch without swapping stacks—keeping craft, speed,
+              and governance intact as you evolve.
+            </p>
             <ul className="list-unstyled d-flex flex-column gap-2 text-muted mt-4">
               {heroHighlights.map((item) => (
                 <li key={item} className="d-flex align-items-center gap-3">
@@ -62,10 +71,16 @@ export default function Hero() {
                 {siteConfig.secondaryCta.label}
               </Button>
             </div>
+            <div className="d-flex flex-wrap gap-2 align-items-center mt-4 text-muted small">
+              <span className="badge rounded-pill bg-opacity-10 bg-light text-light text-uppercase letter-spacing-1">Portfolio</span>
+              <span className="badge rounded-pill bg-opacity-10 bg-light text-light text-uppercase letter-spacing-1">Product</span>
+              <span className="badge rounded-pill bg-opacity-10 bg-primary text-primary text-uppercase letter-spacing-1">Launch</span>
+              <span className="text-muted">Built as one system.</span>
+            </div>
           </Col>
           <Col lg={5}>
-            <div className="glass-card p-4 p-lg-5 h-100">
-              <div className="d-flex flex-column gap-4">
+            <div className="glass-card p-4 p-lg-5 h-100 d-grid gap-4">
+              <div className="d-flex flex-column gap-3">
                 {heroStats.map((stat) => (
                   <div key={stat.label} className="d-flex justify-content-between align-items-center">
                     <span className="text-muted text-uppercase small letter-spacing-1">{stat.label}</span>
@@ -75,13 +90,17 @@ export default function Hero() {
                   </div>
                 ))}
               </div>
-              <div className="mt-5">
-                <p className="text-muted small mb-2 text-uppercase letter-spacing-1">Trusted by teams shipping at scale</p>
-                <div className="d-flex flex-wrap gap-3">
-                  {['Northwind', 'Meridian', 'Aster', 'Fieldguide'].map((brand) => (
-                    <span key={brand} className="badge bg-opacity-10 bg-light text-light text-uppercase letter-spacing-1">
-                      {brand}
-                    </span>
+              <div className="border-top border-opacity-25 pt-3">
+                <p className="text-muted small mb-3 text-uppercase letter-spacing-1">System lanes</p>
+                <div className="d-grid gap-2">
+                  {heroModes.map((mode) => (
+                    <div key={mode.title} className="d-flex align-items-start gap-3 rounded-3 p-3 bg-opacity-10 bg-light">
+                      <span className="dot-accent mt-1" />
+                      <div>
+                        <div className="text-white fw-semibold">{mode.title}</div>
+                        <div className="text-muted small">{mode.description}</div>
+                      </div>
+                    </div>
                   ))}
                 </div>
               </div>
