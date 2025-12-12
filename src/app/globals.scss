@@ -1454,6 +1454,8 @@ section {
   gap: 1rem;
   animation: marquee 26s linear infinite;
   min-width: max-content;
+  align-items: center;
+  white-space: nowrap;
 }
 
 .signal-chip {
