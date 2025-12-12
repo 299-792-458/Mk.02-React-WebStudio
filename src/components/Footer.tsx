@@ -8,8 +8,8 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="py-5 mt-auto border-top border-1 border-opacity-10 border-white-50">
-      <Container className="studio-container">
+    <footer className="py-5 mt-auto">
+      <Container className="studio-container footer-shell glass-card">
         <Row className="gy-4">
           <Col md={5}>
             <div className="badge-pill bg-opacity-10 bg-primary text-primary mb-3">{siteConfig.shortName}</div>
