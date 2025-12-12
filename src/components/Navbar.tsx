@@ -18,7 +18,7 @@ export default function AppNavbar() {
   };
 
   return (
-    <Navbar expand="lg" sticky="top" className="py-3" bg="body">
+    <Navbar expand="lg" sticky="top" className="py-3 nav-glass" bg="body">
       <Container className="studio-container">
         <Navbar.Brand as={Link} href="/" className="fw-bold text-uppercase letter-spacing-1">
           {siteConfig.shortName}
