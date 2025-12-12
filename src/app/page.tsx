@@ -18,6 +18,21 @@ import InnovationStackSection from '@/components/home/InnovationStackSection';
 import ShowreelSection from '@/components/home/ShowreelSection';
 import PerformanceWallSection from '@/components/home/PerformanceWallSection';
 import ArchitectureSection from '@/components/home/ArchitectureSection';
+import OmniDeckSection from '@/components/home/OmniDeckSection';
+import LabBurstSection from '@/components/home/LabBurstSection';
+import DistinctionsSection from '@/components/home/DistinctionsSection';
+import CommandPaletteSection from '@/components/home/CommandPaletteSection';
+import AwardOrbitSection from '@/components/home/AwardOrbitSection';
+import KineticMetricsSection from '@/components/home/KineticMetricsSection';
+import SignalRadarSection from '@/components/home/SignalRadarSection';
+import LaunchSchedulerSection from '@/components/home/LaunchSchedulerSection';
+import MotionChoreoSection from '@/components/home/MotionChoreoSection';
+import HyperPlaygroundSection from '@/components/home/HyperPlaygroundSection';
+import AnimationGallerySection from '@/components/home/AnimationGallerySection';
+import DesignForgeSection from '@/components/home/DesignForgeSection';
+import LiveOpsWallSection from '@/components/home/LiveOpsWallSection';
+import ParallaxRunwaySection from '@/components/home/ParallaxRunwaySection';
+import KineticTimelineSection from '@/components/home/KineticTimelineSection';
 
 export default function Home() {
   return (
@@ -27,9 +42,24 @@ export default function Home() {
       <MomentumTicker />
       <UniversalSystemSection />
       <ScrollScenesSection />
+      <OmniDeckSection />
+      <HyperPlaygroundSection />
       <InnovationStackSection />
+      <LabBurstSection />
+      <CommandPaletteSection />
+      <SignalRadarSection />
+      <LiveOpsWallSection />
       <ShowreelSection />
+      <KineticMetricsSection />
+      <MotionChoreoSection />
+      <AnimationGallerySection />
+      <DesignForgeSection />
+      <ParallaxRunwaySection />
+      <KineticTimelineSection />
       <ShowcaseSection />
+      <DistinctionsSection />
+      <LaunchSchedulerSection />
+      <AwardOrbitSection />
       <ArchitectureSection />
       <ModesSection />
       <CapabilitiesSection />

@@ -306,3 +306,320 @@ export const scrollScenes = [
     kpi: 'Go-live 4–6 weeks',
   },
 ];
+
+export const omniDeckModes = [
+  {
+    id: 'flagship',
+    label: 'Flagship OS',
+    title: 'Portfolio + product primer unified under one cinematic deck.',
+    summary: 'Hero states, case OS, and inline proof modules stay consistent while adapting tone per audience.',
+    actions: ['Hero, case, and drop canvases share tokens', 'Press + social exports in one click', 'Performance gates keep LCP under 1s'],
+    metric: 'Go-live 4–6 weeks',
+  },
+  {
+    id: 'product',
+    label: 'Product Layer',
+    title: 'Guided onboarding, docs, and help surfaces that feel premium.',
+    summary: 'Contextual journeys with keyboardable navigation, inline callouts, and telemetry baked in.',
+    actions: ['Feature walkthrough slots', 'Sticky timelines + keyboard nav', 'Experiment + flag hooks ready'],
+    metric: 'Activation +36%',
+  },
+  {
+    id: 'launch',
+    label: 'Launch Lab',
+    title: 'Campaign drops, press hubs, and social crops assembled in minutes.',
+    summary: 'Scroll-snapped drop cards, OG automation, and governance so every release feels deliberate.',
+    actions: ['Drop playlists + live states', 'Press pack generator', 'OG/SEO automation + link hygiene'],
+    metric: 'Update to live <20m',
+  },
+  {
+    id: 'ops',
+    label: 'Ops + Growth',
+    title: 'Observability and governance that keep the system trustworthy.',
+    summary: 'Event dictionary, dashboards, and a release ritual with accessibility + visual regression baked in.',
+    actions: ['Event schemas + dashboards', 'Performance + motion budgets', 'Governance + playbook'],
+    metric: 'Telemetry 100%',
+  },
+];
+
+export const labBursts = [
+  {
+    title: 'Holographic storytelling',
+    tag: 'Cinematic UX',
+    description: 'Layered parallax, reactive glass, and scroll-linked reveals tuned to motion budgets.',
+    metric: 'Frame budget 12ms',
+  },
+  {
+    title: 'Live performance wall',
+    tag: 'Perf QA',
+    description: 'Edge/Node parity with guardrails, payload discipline, and synthetic + RUM watchtowers.',
+    metric: 'P95 LCP 0.9s',
+  },
+  {
+    title: 'Content ops autopilot',
+    tag: 'Publishing',
+    description: 'MDX + CMS flows, OG/SEO automation, and social crops for every hero/case/drop variant.',
+    metric: 'Ship cadence bi-weekly',
+  },
+  {
+    title: 'Experiment runway',
+    tag: 'Growth',
+    description: 'Feature flags, test harness, and dashboards so launches stay measurable from day one.',
+    metric: 'Experiments 100%',
+  },
+];
+
+export const distinctions = [
+  { label: 'Press-ready builds', detail: 'Case OS + press kits + OG/social automation' },
+  { label: 'Enterprise discipline', detail: 'Perf budgets, accessibility sweeps, governance ritual' },
+  { label: 'Design-engineering sync', detail: 'Tokens and motion ramps in Figma + code, shipped together' },
+  { label: 'Edge-first delivery', detail: 'ISR/SSR tuned per route, CDN + image optimization' },
+];
+
+export const commandPaletteShortcuts = [
+  {
+    id: 'case-os',
+    label: 'Case OS ready',
+    description: 'Spin up a new case drop with hero, proof rail, timeline, and social crops in minutes.',
+    action: 'Create drop',
+    signal: 'Case library + drop playlists',
+  },
+  {
+    id: 'product-guide',
+    label: 'Product guide launch',
+    description: 'Publish guided walkthroughs with keyboard nav, sticky progress, and telemetry wired in.',
+    action: 'Launch guide',
+    signal: 'Activation +36%',
+  },
+  {
+    id: 'press-pack',
+    label: 'Press pack generator',
+    description: 'Auto-generate OGs, press assets, and snippets that stay in sync with your hero narratives.',
+    action: 'Generate pack',
+    signal: 'Link hygiene + social ready',
+  },
+  {
+    id: 'experiment',
+    label: 'Experiment runway',
+    description: 'Flag a feature, ship an A/B, and capture events with dashboards templated for your goals.',
+    action: 'Ship test',
+    signal: 'Telemetry 100%',
+  },
+];
+
+export const awardTimeline = [
+  {
+    year: '2025',
+    title: 'Edge-native system launch',
+    detail: 'Universal build with Edge + Node parity, live analytics, and motion ramp governance.',
+  },
+  {
+    year: '2024',
+    title: 'Design systems accolades',
+    detail: 'Recognized for cross-surface token orchestration and cinematic-yet-performant motion language.',
+  },
+  {
+    year: '2023',
+    title: 'Publishing OS rollout',
+    detail: 'MDX + CMS, OG automation, and social crops powering monthly drops for portfolio + product.',
+  },
+  {
+    year: '2022',
+    title: 'Performance wall shipped',
+    detail: 'Shiproom with budgets, synthetic + RUM guardrails, and visual regression gates.',
+  },
+];
+
+export const kineticMetrics = [
+  { label: 'Frame budget', value: 12, suffix: 'ms', caption: 'GPU-friendly motion ramps' },
+  { label: 'LCP', value: 0.9, suffix: 's', caption: 'Edge/Node parity + image discipline' },
+  { label: 'Update to live', value: 20, suffix: 'm', caption: 'Publishing OS + OG automation' },
+  { label: 'Modules', value: 120, suffix: '+', caption: 'Reusable blocks across surfaces' },
+  { label: 'Accessibility', value: 100, suffix: '%', caption: 'Keyboard paths + focus states' },
+  { label: 'Experiments ready', value: 100, suffix: '%', caption: 'Flags + dashboards' },
+];
+
+export const signalRadar = [
+  { label: 'Performance wall', value: 98, detail: 'Edge + Node parity, payload discipline' },
+  { label: 'Motion safety', value: 94, detail: 'GPU-friendly, reduced-motion aware ramps' },
+  { label: 'A11y coverage', value: 100, detail: 'Keyboard paths, focus, ARIA patterns' },
+  { label: 'Publishing velocity', value: 92, detail: 'MDX + CMS + OG automation' },
+  { label: 'Experiment runway', value: 96, detail: 'Flags, dashboards, and guardrails' },
+  { label: 'Governance', value: 90, detail: 'Release rituals, checklists, ownership' },
+];
+
+export const launchScheduler = [
+  { label: 'Sprint 0 — Signal lock', time: 'Week 1', detail: 'Narrative rails, KPIs, performance budgets, references' },
+  { label: 'Sprint 1 — System build', time: 'Week 2-3', detail: 'Tokens, motion ramps, hero/case/product canvases' },
+  { label: 'Sprint 2 — Content ops', time: 'Week 4', detail: 'MDX + CMS wiring, OG automation, social crops' },
+  { label: 'Sprint 3 — QA + perf', time: 'Week 5', detail: 'Accessibility sweep, visual regression, RUM hooks' },
+  { label: 'Sprint 4 — Launch', time: 'Week 6', detail: 'Press kit, experiments, dashboards, ownership handoff' },
+];
+
+export const motionChoreo = [
+  { title: 'Hero choreography', moves: ['Layered parallax', 'Aurora glow', 'Cursor-reactive gradients'] },
+  { title: 'Scroll orchestra', moves: ['Lift reveals', 'Slide rails', 'Sticky timelines'] },
+  { title: 'Micro-interactions', moves: ['Magnetic buttons', 'Icon flares', 'Depth tilts'] },
+  { title: 'Data motion', moves: ['Number tickers', 'Progress sweeps', 'Radar pulses'] },
+  { title: 'Navigation', moves: ['Smart highlight trail', 'Command palette focus', 'Keyboard-first paths'] },
+  { title: 'Accessibility', moves: ['Reduced-motion safe', 'Focus halos', 'ARIA-live updates'] },
+];
+
+export const playgroundModes = [
+  {
+    id: 'portfolio',
+    label: 'Portfolio hero',
+    headline: 'Cinematic flagship with live case rail',
+    description: 'Aurora gradients, parallax layers, and instant case cards pulling from the case OS.',
+    signals: ['Parallax hero', 'Case rail autoplay', 'OG/social crops linked'],
+  },
+  {
+    id: 'product',
+    label: 'Product walk',
+    headline: 'Guided onboarding with sticky progress',
+    description: 'Keyboardable steps, inline demos, and metrics streaming into observability.',
+    signals: ['Sticky timeline', 'Keyboard nav', 'Telemetry hooks'],
+  },
+  {
+    id: 'launch',
+    label: 'Launch drop',
+    headline: 'Scroll-snapped drop cards and press kit generator',
+    description: 'Campaign playlist, OG automation, and live status badges tuned for shareability.',
+    signals: ['Drop playlist', 'Press pack auto', 'Link hygiene'],
+  },
+  {
+    id: 'docs',
+    label: 'Docs prime',
+    headline: 'Knowledge surface that feels like product',
+    description: 'Contextual help, quick jumps, and reduced-motion safe animations.',
+    signals: ['Contextual help', 'Quick jumps', 'A11y-first motion'],
+  },
+];
+
+export const animationGallery = [
+  { title: 'Holo grid', detail: 'Glassmorphism tiles with depth tilt and glow sweep' },
+  { title: 'Ribbon marquee', detail: 'Infinite ribbons with hover-pause and dual-track parallax' },
+  { title: 'Data pulse', detail: 'Metric tickers with cascading glow and gradient sweep' },
+  { title: 'Magnetic buttons', detail: 'Cursor-aware CTA with sheen and lift' },
+  { title: 'Scroll-linked story', detail: 'Lift + slide reveals with sticky narrative cards' },
+  { title: 'Neon radar', detail: 'Pulsing radar with rotating needle and glow orbs' },
+];
+
+export const designForge = [
+  { label: 'Token matrix', description: 'Color, motion, elevation, and space tokens sync across Figma + code.' },
+  { label: 'Component lab', description: 'Hero, case, product, and drop canvases with slot-based composition.' },
+  { label: 'Content OS', description: 'MDX + CMS graph with OG automation, social crops, and governance.' },
+  { label: 'QA runway', description: 'Perf budgets, accessibility sweeps, visual regression, and smoke rails.' },
+  { label: 'Observability', description: 'Events, traces, and dashboards baked into templates.' },
+  { label: 'Experimentation', description: 'Feature flags and test harness ready on launch.' },
+];
+
+export const opsWallSignals = [
+  { label: 'Edge parity', status: 'Live', detail: 'Edge + Node rendering tuned per route, cache hints wired.' },
+  { label: 'Perf guardrails', status: 'Active', detail: 'Budgets enforced per page type, images/CDN optimized.' },
+  { label: 'Motion safety', status: 'Safe', detail: 'GPU-first transforms, reduced-motion variants baked in.' },
+  { label: 'Accessibility', status: 'Pass', detail: 'Keyboard paths, focus rings, ARIA patterns enforced.' },
+  { label: 'Publishing ops', status: 'Ready', detail: 'MDX + CMS with OG automation and social crops.' },
+  { label: 'Observability', status: 'Streaming', detail: 'Events, traces, errors, and dashboards lit up.' },
+];
+
+export const runwayMoments = [
+  {
+    title: 'Ignition',
+    description: 'Kickoff with narrative rails, KPI lock, and visual language moodboards.',
+    metric: 'Direction locked wk1',
+  },
+  {
+    title: 'Assembly',
+    description: 'Tokens, motion ramps, and hero/case/product canvases composed in parallel.',
+    metric: 'System ready wk2',
+  },
+  {
+    title: 'Calibration',
+    description: 'Performance gates, accessibility sweeps, and visual regression rails.',
+    metric: 'Budgets enforced',
+  },
+  {
+    title: 'Launch',
+    description: 'Press kit, experiment hooks, dashboards, and governance ritual.',
+    metric: 'Ship wk6',
+  },
+];
+
+export const kineticTimeline = [
+  { label: 'Frame pacing', value: 92, caption: 'GPU transforms, no layout thrash' },
+  { label: 'Image discipline', value: 95, caption: 'CDN + smart formats, cache hints' },
+  { label: 'SEO/OG', value: 93, caption: 'Automation on every hero/case/drop' },
+  { label: 'Content ops', value: 90, caption: 'MDX + CMS, social crops, governance' },
+  { label: 'QA coverage', value: 94, caption: 'Accessibility + visual regression' },
+  { label: 'Experimentation', value: 96, caption: 'Flags + dashboards ready' },
+];
+
+export const omniDeckModes = [
+  {
+    id: 'flagship',
+    label: 'Flagship OS',
+    title: 'Portfolio + product primer unified under one cinematic deck.',
+    summary: 'Hero states, case OS, and inline proof modules stay consistent while adapting tone per audience.',
+    actions: ['Hero, case, and drop canvases share tokens', 'Press + social exports in one click', 'Performance gates keep LCP under 1s'],
+    metric: 'Go-live 4–6 weeks',
+  },
+  {
+    id: 'product',
+    label: 'Product Layer',
+    title: 'Guided onboarding, docs, and help surfaces that feel premium.',
+    summary: 'Contextual journeys with keyboardable navigation, inline callouts, and telemetry baked in.',
+    actions: ['Feature walkthrough slots', 'Sticky timelines + keyboard nav', 'Experiment + flag hooks ready'],
+    metric: 'Activation +36%',
+  },
+  {
+    id: 'launch',
+    label: 'Launch Lab',
+    title: 'Campaign drops, press hubs, and social crops assembled in minutes.',
+    summary: 'Scroll-snapped drop cards, OG automation, and governance so every release feels deliberate.',
+    actions: ['Drop playlists + live states', 'Press pack generator', 'OG/SEO automation + link hygiene'],
+    metric: 'Update to live <20m',
+  },
+  {
+    id: 'ops',
+    label: 'Ops + Growth',
+    title: 'Observability and governance that keep the system trustworthy.',
+    summary: 'Event dictionary, dashboards, and a release ritual with accessibility + visual regression baked in.',
+    actions: ['Event schemas + dashboards', 'Performance + motion budgets', 'Governance + playbook'],
+    metric: 'Telemetry 100%',
+  },
+];
+
+export const labBursts = [
+  {
+    title: 'Holographic storytelling',
+    tag: 'Cinematic UX',
+    description: 'Layered parallax, reactive glass, and scroll-linked reveals tuned to motion budgets.',
+    metric: 'Frame budget 12ms',
+  },
+  {
+    title: 'Live performance wall',
+    tag: 'Perf QA',
+    description: 'Edge/Node parity with guardrails, payload discipline, and synthetic + RUM watchtowers.',
+    metric: 'P95 LCP 0.9s',
+  },
+  {
+    title: 'Content ops autopilot',
+    tag: 'Publishing',
+    description: 'MDX + CMS flows, OG/SEO automation, and social crops for every hero/case/drop variant.',
+    metric: 'Ship cadence bi-weekly',
+  },
+  {
+    title: 'Experiment runway',
+    tag: 'Growth',
+    description: 'Feature flags, test harness, and dashboards so launches stay measurable from day one.',
+    metric: 'Experiments 100%',
+  },
+];
+
+export const distinctions = [
+  { label: 'Press-ready builds', detail: 'Case OS + press kits + OG/social automation' },
+  { label: 'Enterprise discipline', detail: 'Perf budgets, accessibility sweeps, governance ritual' },
+  { label: 'Design-engineering sync', detail: 'Tokens and motion ramps in Figma + code, shipped together' },
+  { label: 'Edge-first delivery', detail: 'ISR/SSR tuned per route, CDN + image optimization' },
+];
