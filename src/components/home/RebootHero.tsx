@@ -45,7 +45,7 @@ export default function RebootHero() {
                   <FaArrowRight />
                 </Link>
                 {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
-                <Link href="/showreel" className="ghost-btn" aria-label="See live system">
+                <Link href="/#case-studies" className="ghost-btn" aria-label="See live system">
                   <FaPlay />
                   Live system tour
                 </Link>
