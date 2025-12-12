@@ -1749,6 +1749,39 @@ section {
   }
 }
 
+@keyframes sparkPulse {
+  0% {
+    box-shadow: 0 0 0 10px rgba(var(--accent-glow), 0.12);
+  }
+  50% {
+    box-shadow: 0 0 0 16px rgba(var(--accent-glow), 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 10px rgba(var(--accent-glow), 0.12);
+  }
+}
+
+@keyframes slowSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes slowDrift {
+  0% {
+    transform: translate3d(-6px, -4px, 0);
+  }
+  50% {
+    transform: translate3d(6px, 4px, 0);
+  }
+  100% {
+    transform: translate3d(-4px, 6px, 0);
+  }
+}
+
 @keyframes auroraShift {
   0% {
     transform: translate3d(-6%, -4%, 0) rotate(0deg) scale(1);
