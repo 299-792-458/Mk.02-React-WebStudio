@@ -53,9 +53,11 @@ export default function ViewportReveal({
     return () => observer.disconnect();
   }, [threshold]);
 
+  const Component = as as any;
+
   return (
     <Component
-      ref={ref as never}
+      ref={ref}
       className={[
         'reveal-base',
         `reveal-${variant}`,
