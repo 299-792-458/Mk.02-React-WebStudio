@@ -8,6 +8,9 @@ import { ThemeProvider } from '@/components/ThemeProvider';
 import { siteConfig } from '@/lib/siteConfig';
 import Analytics from '@/components/Analytics';
 import ScrollProgressBar from '@/components/ScrollProgressBar';
+import SmoothScrolling from '@/components/ui/SmoothScrolling';
+import MouseTrailer from '@/components/ui/MouseTrailer';
+import FloatingDock from '@/components/ui/FloatingDock';
 
 const sans = Plus_Jakarta_Sans({
   subsets: ['latin'],
@@ -58,13 +61,17 @@ export default function RootLayout({
     <html lang="en" className="h-100" suppressHydrationWarning>
       <body className={`${sans.variable} ${display.variable} d-flex flex-column min-vh-100`}>
         <ThemeProvider attribute="data-bs-theme" defaultTheme="system" enableSystem>
-          <ScrollProgressBar />
-          <AppNavbar />
-          <div style={{ flex: '1 0 auto' }}>{children}</div>
-          <Footer />
-          <Suspense fallback={null}>
-            <Analytics />
-          </Suspense>
+          <SmoothScrolling>
+            <MouseTrailer />
+            <ScrollProgressBar />
+            <AppNavbar />
+            <div style={{ flex: '1 0 auto' }}>{children}</div>
+            <Footer />
+            <FloatingDock />
+            <Suspense fallback={null}>
+              <Analytics />
+            </Suspense>
+          </SmoothScrolling>
         </ThemeProvider>
       </body>
     </html>

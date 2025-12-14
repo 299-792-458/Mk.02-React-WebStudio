@@ -31,7 +31,7 @@ export default function AppNavbar() {
                 as={Link}
                 key={item.href}
                 href={item.href}
-                className="px-lg-3"
+                className="px-lg-3 d-lg-none"
                 active={isActive(item.href)}
               >
                 {item.label}
