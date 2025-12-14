@@ -73,9 +73,9 @@ export default function ContactPage() {
               />
             </Form.Group>
 
-            <Button variant="primary" type="submit" size="lg" className="fw-semibold">
+            <button type="submit" className="btn btn-primary btn-lg fw-semibold">
               Send message
-            </Button>
+            </button>
           </Form>
 
           <div className="mt-4 text-muted small">
