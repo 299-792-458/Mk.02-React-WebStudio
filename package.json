@@ -10,7 +10,10 @@
   },
   "dependencies": {
     "@next/mdx": "^15.5.4",
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.4.2",
     "@studio-freight/react-lenis": "^0.0.47",
+    "@types/three": "^0.182.0",
     "bootstrap": "^5.3.8",
     "clsx": "^2.1.1",
     "framer-motion": "^12.23.26",
@@ -30,7 +33,8 @@
     "remark-rehype": "^11.1.2",
     "sass": "^1.93.2",
     "shiki": "^3.13.0",
-    "tailwind-merge": "^3.4.0"
+    "tailwind-merge": "^3.4.0",
+    "three": "^0.182.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
