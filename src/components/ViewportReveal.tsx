@@ -14,7 +14,7 @@ type Props = {
 };
 
 export default function ViewportReveal({
-  as: Component = 'div',
+  as: Tag = 'div',
   className,
   children,
   delay = 0,
@@ -53,13 +53,12 @@ export default function ViewportReveal({
     return () => observer.disconnect();
   }, [threshold]);
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const Component = as as any;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const Component = Tag as any;
 
   return (
     <Component
-      ref={ref}
-      className={[
+      ref={ref}      className={[
         'reveal-base',
         `reveal-${variant}`,
         visible ? 'reveal-visible' : '',
