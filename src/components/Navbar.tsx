@@ -39,10 +39,12 @@ export default function AppNavbar() {
             ))}
             <div className="d-flex align-items-center gap-3 mt-3 mt-lg-0 ms-lg-3">
               <ThemeToggleButton />
-              {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
-              <Button as={Link as any} href={siteConfig.primaryCta.href} variant="primary" size="sm" className="fw-semibold">
+              <Link 
+                href={siteConfig.primaryCta.href} 
+                className="btn btn-primary btn-sm fw-semibold"
+              >
                 {siteConfig.primaryCta.label}
-              </Button>
+              </Link>
             </div>
           </Nav>
         </Navbar.Collapse>
