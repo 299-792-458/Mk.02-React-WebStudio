@@ -53,6 +53,7 @@ export default function ViewportReveal({
     return () => observer.disconnect();
   }, [threshold]);
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
   const Component = as as any;
 
   return (

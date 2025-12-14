@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Container, Row, Col, Form, Card, Alert } from 'react-bootstrap';
+import { Form, Alert } from 'react-bootstrap';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
