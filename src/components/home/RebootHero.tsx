@@ -39,12 +39,12 @@ export default function RebootHero() {
                 win enterprise trust, inspire talent, and move faster than the market.
               </p>
               <div className="hero-actions">
-                {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
+                
                 <Link href={siteConfig.primaryCta.href} className="btn btn-primary hero-btn" aria-label={siteConfig.primaryCta.label}>
                   {siteConfig.primaryCta.label}
                   <FaArrowRight />
                 </Link>
-                {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
+                
                 <Link href="/#case-studies" className="ghost-btn" aria-label="See live system">
                   <FaPlay />
                   Live system tour

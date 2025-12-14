@@ -16,7 +16,7 @@ export default function FinalCta() {
               and proves your technical edge.
             </p>
           </div>
-          {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
+
           <Link href={siteConfig.primaryCta.href} className="btn btn-primary hero-btn" aria-label={siteConfig.primaryCta.label}>
             {siteConfig.primaryCta.label}
           </Link>

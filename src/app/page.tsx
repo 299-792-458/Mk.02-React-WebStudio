@@ -1,9 +1,11 @@
+import dynamic from 'next/dynamic';
 import RebootHero from '@/components/home/RebootHero';
-import SignalMarquee from '@/components/home/SignalMarquee';
-import SystemBlueprint from '@/components/home/SystemBlueprint';
-import WorkShowcases from '@/components/home/WorkShowcases';
-import CapabilityMatrix from '@/components/home/CapabilityMatrix';
-import FinalCta from '@/components/home/FinalCta';
+
+const SignalMarquee = dynamic(() => import('@/components/home/SignalMarquee'));
+const SystemBlueprint = dynamic(() => import('@/components/home/SystemBlueprint'));
+const WorkShowcases = dynamic(() => import('@/components/home/WorkShowcases'));
+const CapabilityMatrix = dynamic(() => import('@/components/home/CapabilityMatrix'));
+const FinalCta = dynamic(() => import('@/components/home/FinalCta'));
 
 export default function Home() {
   return (
