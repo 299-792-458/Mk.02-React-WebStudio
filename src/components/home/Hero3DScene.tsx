@@ -32,15 +32,7 @@ function AnimatedSphere() {
   );
 }
 
-function Rig() {
-  return useFrame((state) => {
-    state.camera.position.lerp(
-      new THREE.Vector3(state.pointer.x * 2, state.pointer.y * 2, 5),
-      0.05
-    );
-    state.camera.lookAt(0, 0, 0);
-  });
-}
+
 
 export default function Hero3DScene() {
   return (
